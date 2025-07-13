@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Lakshmi Furniture - 80+ Years of Trust | Traditional Furniture & Mirrors</title>
+    <meta name="description" content="Discover 80+ years of traditional furniture craftsmanship in Madurai. Shree Lakshmi Furniture offers premium cots, mirrors, chairs, dining tables, and devotional items with multilingual support." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background font-inter text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-warm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo Section -->
+<div class="flex items-center space-x-3">
+  <!-- Lakshmi Logo Image -->
+  <img src="../lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-12 h-12 rounded-full object-cover border-2 border-primary" />
+
+  <!-- Shop Name -->
+  <div>
+    <h1 class="text-xl font-poppins font-bold text-primary">Shree Lakshmi</h1>
+    <p class="text-sm text-text-secondary">Mirror Traders & Furniture</p>
+  </div>
+</div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_page.html" class="text-primary font-medium border-b-2 border-primary pb-1">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Products</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Language Switcher & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button id="languageToggle" class="flex items-center space-x-2 bg-primary-50 px-3 py-2 rounded-lg hover:bg-primary-100 transition-colors">
+                            <span class="text-sm font-medium text-primary" id="currentLang">English</span>
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="absolute right-0 mt-2 w-32 bg-surface rounded-lg shadow-warm border hidden">
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-t-lg" onclick="switchLanguage('en')">English</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ta')">தமிழ்</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ml')">മലയാളം</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-b-lg" onclick="switchLanguage('hi')">हिंदी</button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-primary-50">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden mt-4 pb-4 border-t border-primary-100 hidden">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_page.html" class="text-primary font-medium py-2">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors py-2">Products</a>
+                    <a href="special_offers.html" class="text-text-secondary hover:text-primary transition-colors py-2">Offers</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Shree Lakshmi Furniture Shop" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-800/60 to-transparent"></div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl">
+                    <!-- English Content -->
+                    <div class="lang-content lang-en">
+                        <h1 class="text-4xl md:text-6xl font-poppins font-bold text-surface mb-6 animate-slide-down">
+                            Welcome to<br />
+                            <span class="text-secondary">Shree Lakshmi Mirror Traders</span><br />
+                            & Furniture
+                        </h1>
+                        <p class="text-xl md:text-2xl text-primary-100 mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+                            80+ Years of Traditional Craftsmanship @ Cumbum,Theni
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 animate-slide-down" style="animation-delay: 0.4s;">
+                            <a href="tel:+919842982085" class="bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold text-center">
+                                Call to Order
+                            </a>
+                            <a href="products_catalog.html" class="bg-transparent border-2 border-surface text-surface hover:bg-surface hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 text-center">
+                                View Products
+                            </a>
+                        </div>
+                    </div>
+
+ <!-- Tamil Content -->
+<div class="lang-content lang-ta hidden">
+    <h1 class="text-4xl md:text-6xl font-poppins font-bold text-surface mb-6 animate-slide-down">
+        வரவேற்கிறோம்<br />
+        <span class="text-secondary">ஸ்ரீ லக்ஷ்மி கண்ணாடி வியாபாரம்</span><br />
+        & ஃபர்னிச்சர்
+    </h1>
+    <p class="text-xl md:text-2xl text-primary-100 mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+        தேனியில் 80 ஆண்டுகளுக்கும் மேலான நம்பகமான சேவை
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 animate-slide-down" style="animation-delay: 0.4s;">
+        <a href="tel:+919842982085" class="bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold text-center">
+            ஆர்டர் செய்ய அழையுங்கள்
+        </a>
+        <a href="products_catalog.html" class="bg-transparent border-2 border-surface text-surface hover:bg-surface hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 text-center">
+            தயாரிப்புகளைப் பார்க்க
+        </a>
+    </div>
+</div>
+
+
+ <!-- Malayalam Content -->
+<div class="lang-content lang-ml hidden">
+    <h1 class="text-4xl md:text-6xl font-poppins font-bold text-surface mb-6 animate-slide-down">
+        സ്വാഗതം<br />
+        <span class="text-secondary">ശ്രീ ലക്ഷ്മി മിറർ ട്രേഡേഴ്സ്</span><br />
+        & ഫർണിച്ചർ
+    </h1>
+    <p class="text-xl md:text-2xl text-primary-100 mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+        തെനിയിൽ 80 വർഷത്തിലധികം വിശ്വാസമുള്ള സേവനം
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 animate-slide-down" style="animation-delay: 0.4s;">
+        <a href="tel:+919842982085" class="bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold text-center">
+            ഓർഡറിനായി വിളിക്കുക
+        </a>
+        <a href="products_catalog.html" class="bg-transparent border-2 border-surface text-surface hover:bg-surface hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 text-center">
+            ഉൽപ്പന്നങ്ങൾ കാണുക
+        </a>
+    </div>
+</div>
+
+   <!-- Hindi Content -->
+<div class="lang-content lang-hi hidden">
+    <h1 class="text-4xl md:text-6xl font-poppins font-bold text-surface mb-6 animate-slide-down">
+        स्वागत है<br />
+        <span class="text-secondary">श्री लक्ष्मी मिरर ट्रेडर्स</span><br />
+        & फर्नीचर
+    </h1>
+    <p class="text-xl md:text-2xl text-primary-100 mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+        थेनी में 80+ वर्षों की विश्वसनीय सेवा
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 animate-slide-down" style="animation-delay: 0.4s;">
+        <a href="tel:+919842982085" class="bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold text-center">
+            ऑर्डर करने के लिए कॉल करें
+        </a>
+        <a href="products_catalog.html" class="bg-transparent border-2 border-surface text-surface hover:bg-surface hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 text-center">
+            उत्पाद देखें
+        </a>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        80+ Years of Heritage
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                        Shree Lakshmi Furniture has been crafting premium  mirrors, Devotional Photo frames andfurniture in Cumbum, 
+                        serving generations of families with traditional Tamil Nadu craftsmanship and modern quality standards.
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        80+ ஆண்டுகள் பாரம்பரியம்
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                        ஸ்ரீ லக்ஷ்மி ஃபர்னிச்சர் கும்பத்தில் உயர் தர கண்ணாடிகள், பக்தி புகைப்படச் சுவர்கள் மற்றும் மரப伝ியத் தமிழ்நாடு கைவினையுடன் கூடிய நவீன தரநிலைகளில் கூடிய ஃபர்னிச்சர்களை தயாரித்து, பல தலைமுறைகளாக குடும்பங்களுக்கு சேவை செய்து வருகிறது.
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        80+ വർഷത്തെ പൈതൃകം
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                        ശ്രീ ലക്ഷ്മി ഫർണിച്ചർ, കുമ്പത്തിൽ ഉന്നത നിലവാരത്തിലുള്ള കണ്ണാടികൾ, ഭക്തിസാന്ദ്രമായ ഫോട്ടോ ഫ്രെയിമുകൾ, ഫർണിച്ചറുകൾ എന്നിവ നിർമ്മിച്ച്, പാരമ്പര്യതമിഴ്‌നാട് ശിൽപശൈലി പുലർത്തിയുകൊണ്ട്, പുത്തൻ ഗുണനിലവാര മാനദണ്ഡങ്ങളോടെ തലമുറകളായ കുടുംബങ്ങൾക്ക് സേവനം ചെയ്യുന്നു.
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        80+ साल की विरासत
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                        श्री लक्ष्मी फर्नीचर, कुम्बम में प्रीमियम दर्पण, भक्तिपूर्ण फोटो फ्रेम और फर्नीचर का निर्माण करते हुए पारंपरिक तमिलनाडु शिल्पकला और आधुनिक गुणवत्ता मानकों के साथ पीढ़ियों से परिवारों की सेवा कर रहा है।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-primary-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-2">80+ Years</h3>
+                    <p class="text-text-secondary">Trusted Heritage</p>
+                </div>
+
+                <div class="text-center p-6 bg-secondary-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-900" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-2">Quality</h3>
+                    <p class="text-text-secondary">Premium Craftsmanship</p>
+                </div>
+
+                <div class="text-center p-6 bg-accent-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L15.09 8.26L22 9L15.09 9.74L12 16L8.91 9.74L2 9L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-2">Local</h3>
+                    <p class="text-text-secondary">Cumbum, Theni Based</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        Featured Categories
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Discover our premium collection of traditional and modern furniture
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        சிறப்பு வகைகள்
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        பாரம்பரிய மற்றும் நவீன பர்னிச்சர்களின் எங்கள் உயர்தர சேகரிப்பைக் கண்டறியுங்கள்
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        പ്രത്യേക വിഭാഗങ്ങൾ
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        പരമ്പരാഗതവും ആധുനികവുമായ ഫർണിച്ചറുകളുടെ ഞങ്ങളുടെ പ്രീമിയം ശേഖരം കണ്ടെത്തുക
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        विशेष श्रेणियां
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        पारंपरिक और आधुनिक फर्नीचर के हमारे प्रीमियम संग्रह की खोज करें
+                    </p>
+                </div>
+            </div>
+
+            <!-- Product Categories Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Cot Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="w-full aspect-square overflow-hidden">
+        <img 
+            src="../cot.jpg" 
+            alt="Traditional Cots" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Cots</h3>
+        <p class="text-sm text-text-secondary mb-4">Traditional & Modern Designs</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+
+  <!-- Mirror Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../mirror.jpg" 
+            alt="Decorative Mirrors" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Mirrors</h3>
+        <p class="text-sm text-text-secondary mb-4">Decorative & Functional</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+               <!-- Chair Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../chair.jpg" 
+            alt="Wooden Chairs" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Chairs</h3>
+        <p class="text-sm text-text-secondary mb-4">Comfortable Seating</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+       <!-- Dining Table Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../diningtable.jpg" 
+            alt="Dining Tables" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Dining Tables</h3>
+        <p class="text-sm text-text-secondary mb-4">Family Gathering</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+                <!-- Steel Cot Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../steelcot.jpg" 
+            alt="Steel Cots" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Steel Cots</h3>
+        <p class="text-sm text-text-secondary mb-4">Durable & Modern</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+  <!-- Cupboard Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../cupboard.jpg" 
+            alt="Cupboards" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Cupboards</h3>
+        <p class="text-sm text-text-secondary mb-4">Storage Solutions</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+ <!-- TV Stand Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../tvstand.jpg" 
+            alt="TV Stands" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">TV Stands</h3>
+        <p class="text-sm text-text-secondary mb-4">Entertainment Units</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+  <!-- Pooja Materials Category -->
+<div class="bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group">
+    <div class="aspect-square overflow-hidden">
+        <img 
+            src="../pooja.jpg" 
+            alt="Pooja Materials" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="font-poppins font-semibold text-primary mb-2">Pooja Materials</h3>
+        <p class="text-sm text-text-secondary mb-4">Devotional Items</p>
+        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors text-center block">
+            Call to Order
+        </a>
+    </div>
+</div>
+
+            <!-- View All Products Button -->
+            <div class="text-center mt-12">
+                <a href="products_catalog.html" class="inline-flex items-center space-x-2 bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold">
+                    <span class="lang-content lang-en">View All Products</span>
+                    <span class="lang-content lang-ta hidden">அனைத்து தயாரிப்புகளையும் பார்க்கவும்</span>
+                    <span class="lang-content lang-ml hidden">എല്ലാ ഉൽപ്പന്നങ്ങളും കാണുക</span>
+                    <span class="lang-content lang-hi hidden">सभी उत्पाद देखें</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Owner Profile Section -->
+<section class="py-16 bg-surface">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Owner Image -->
+                <div class="text-center lg:text-left">
+                    <div class="relative inline-block">
+                        <div class="w-64 h-64 mx-auto lg:mx-0 rounded-full overflow-hidden shadow-warm-lg">
+                            <img 
+                                src="../owner.jpg" 
+                                alt="Shop Owner" 
+                                class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" 
+                            />
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-secondary rounded-full flex items-center justify-center shadow-gold">
+                            <svg class="w-8 h-8 text-primary-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Owner Message -->
+                    <div>
+                        <!-- English Content -->
+                        <div class="lang-content lang-en">
+                            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                                Meet Our Owner
+                            </h2>
+                            <blockquote class="text-lg text-text-secondary mb-6 italic">
+                                "For over 80 years, our family has been dedicated to crafting quality furniture that brings 
+                                comfort and beauty to Tamil Nadu homes. Every piece we create carries the blessing of 
+                                Goddess Lakshmi and the tradition of our ancestors."
+                            </blockquote>
+                            <div class="border-l-4 border-secondary pl-6">
+                                <p class="font-semibold text-primary text-lg">Ramesh Kumar</p>
+                                <p class="text-text-secondary">Third Generation Owner</p>
+                                <p class="text-text-secondary">Shree Lakshmi Mirror and Furniture</p>
+                            </div>
+                        </div>
+
+                        <!-- Tamil Content -->
+                        <div class="lang-content lang-ta hidden">
+                            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                                எங்கள் உரிமையாளரை சந்திக்கவும்
+                            </h2>
+                            <blockquote class="text-lg text-text-secondary mb-6 italic">
+                                "80 ஆண்டுகளுக்கும் மேலாக, எங்கள் குடும்பம் தமிழ்நாட்டு வீடுகளுக்கு வசதியும் அழகும் தரும் 
+                                தரமான பர்னிச்சர்களை உருவாக்குவதில் அர்ப்பணிப்புடன் இருந்து வருகிறது. நாங்கள் உருவாக்கும் 
+                                ஒவ்வொரு பொருளும் லக்ஷ்மி தேவியின் ஆசீர்வாதத்தையும் எங்கள் முன்னோர்களின் பாரம்பரியத்தையும் சுமந்து செல்கிறது."
+                            </blockquote>
+                            <div class="border-l-4 border-secondary pl-6">
+                                <p class="font-semibold text-primary text-lg">ரமேஷ் குமார்</p>
+                                <p class="text-text-secondary">மூன்றாம் தலைமுறை உரிமையாளர்</p>
+                                <p class="text-text-secondary">ஸ்ரீ லக்ஷ்மி கண்ணாடி மற்றும் பர்னிச்சர்</p>
+
+                            </div>
+                        </div>
+
+                        <!-- Malayalam Content -->
+                        <div class="lang-content lang-ml hidden">
+                            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                                ഞങ്ങളുടെ ഉടമയെ കാണുക
+                            </h2>
+                            <blockquote class="text-lg text-text-secondary mb-6 italic">
+                                "80 വർഷത്തിലേറെയായി, ഞങ്ങളുടെ കുടുംബം തമിഴ്‌നാട് വീടുകളിൽ സുഖവും സൗന്ദര്യവും കൊണ്ടുവരുന്ന 
+                                ഗുണമേന്മയുള്ള ഫർണിച്ചറുകൾ നിർമ്മിക്കുന്നതിൽ സമർപ്പിതരാണ്. ഞങ്ങൾ സൃഷ്ടിക്കുന്ന ഓരോ കഷണവും 
+                                ലക്ഷ്മി ദേവിയുടെ അനുഗ്രഹവും ഞങ്ങളുടെ പൂർവ്വികരുടെ പാരമ്പര്യവും വഹിക്കുന്നു."
+                            </blockquote>
+                            <div class="border-l-4 border-secondary pl-6">
+                                <p class="font-semibold text-primary text-lg">രമേഷ് കുമാര്‍</p>
+                                <p class="text-text-secondary">മൂന്നാം തലമുറ ഉടമ</p>
+                                <p class="text-text-secondary">ശ്രീ ലക്ഷ്മി മിറർ ആൻഡ് ഫർണിച്ചർ</p>
+
+                            </div>
+                        </div>
+
+                        <!-- Hindi Content -->
+                        <div class="lang-content lang-hi hidden">
+                            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                                हमारे मालिक से मिलें
+                            </h2>
+                            <blockquote class="text-lg text-text-secondary mb-6 italic">
+                                "80 से अधिक वर्षों से, हमारा परिवार तमिलनाडु के घरों में आराम और सुंदरता लाने वाले 
+                                गुणवत्तापूर्ण फर्नीचर बनाने के लिए समर्पित है। हमारे द्वारा बनाया गया हर टुकड़ा 
+                                देवी लक्ष्मी का आशीर्वाद और हमारे पूर्वजों की परंपरा को साथ लेकर चलता है।"
+                            </blockquote>
+                            <div class="border-l-4 border-secondary pl-6">
+                                <p class="font-semibold text-primary text-lg">रमेश कुमार</p>
+                                <p class="text-text-secondary">तीसरी पीढ़ी के स्वामी</p>
+                                <p class="text-text-secondary">श्री लक्ष्मी मिरर एंड फर्नीचर</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        Get in Touch
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Visit our showroom or call us for personalized furniture solutions
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        தொடர்பு கொள்ளுங்கள்
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        எங்கள் ஷோரூமைப் பார்வையிடுங்கள் அல்லது தனிப்பயனாக்கப்பட்ட பர்னிச்சர் தீர்வுகளுக்கு எங்களை அழைக்கவும்
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        ബന്ധപ്പെടുക
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        ഞങ്ങളുടെ ഷോറൂം സന്ദർശിക്കുക അല്ലെങ്കിൽ വ്യക്തിഗത ഫർണിച്ചർ പരിഹാരങ്ങൾക്കായി ഞങ്ങളെ വിളിക്കുക
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        संपर्क में रहें
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        हमारे शोरूम में आएं या व्यक्तिगत फर्नीचर समाधान के लिए हमें कॉल करें
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Phone Contact 1 -->
+                <div class="bg-surface rounded-2xl shadow-warm p-6 text-center hover:shadow-warm-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-primary mb-2">Primary Contact</h3>
+                    <p class="text-2xl font-bold text-secondary mb-4">+91 9842982085</p>
+                    <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-6 py-3 rounded-lg font-medium transition-colors block">
+                        Call Now
+                    </a>
+                </div>
+
+                <!-- Phone Contact 2 -->
+                <div class="bg-surface rounded-2xl shadow-warm p-6 text-center hover:shadow-warm-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-900" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-primary mb-2">Secondary Contact</h3>
+                    <p class="text-2xl font-bold text-secondary mb-4">+91 9092195950</p>
+                    <a href="tel:+919092195950" class="w-full bg-secondary hover:bg-secondary-700 text-primary-900 px-6 py-3 rounded-lg font-medium transition-colors block">
+                        Call Now
+                    </a>
+                </div>
+
+                <!-- Location -->
+                <div class="bg-surface rounded-2xl shadow-warm p-6 text-center hover:shadow-warm-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-primary mb-2">Visit Our Showroom</h3>
+                    <p class="text-text-secondary mb-4">Cumbum, Theni, Tamil Nadu</p>
+                    <a href="contact_us.html" class="w-full bg-accent hover:bg-accent-700 text-surface px-6 py-3 rounded-lg font-medium transition-colors block">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+
+<!-- Google Maps Embed -->
+<div class="mt-12">
+    <div class="bg-surface rounded-2xl shadow-warm overflow-hidden">
+        <div class="p-6 border-b border-primary-100">
+            <h3 class="text-xl font-poppins font-semibold text-primary text-center">Our Location</h3>
+        </div>
+        <div class="aspect-video">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.8942999501576!2d77.28235647459637!3d9.738445290397578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b070158408c4a81%3A0x2195e487e165191!2sShree%20Lakshmi%20Mirror%20Traders%20%26%20Furniture!5e0!3m2!1sen!2sin!4v1720440898764!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-surface py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Company Info -->
+<div>
+    <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+        </div>
+        <div>
+                            <h3 class="text-lg font-poppins font-bold">Shree Lakshmi</h3>
+                            <p class="text-sm text-primary-200">Mirror Traders & Furniture</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        80+ years of traditional craftsmanship serving Tamil Nadu families with premium furniture and mirrors.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="home_page.html" class="text-primary-200 hover:text-surface transition-colors">Home</a></li>
+                        <li><a href="about_us_page.html" class="text-primary-200 hover:text-surface transition-colors">About Us</a></li>
+                        <li><a href="products_catalog.html" class="text-primary-200 hover:text-surface transition-colors">Products</a></li>
+                        <li><a href="contact_us.html" class="text-primary-200 hover:text-surface transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9842982085</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9092195950</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Cumbum, Tamil Nadu</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Languages</h4>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <button onclick="switchLanguage('en')" class="text-left text-primary-200 hover:text-surface transition-colors">English</button>
+                        <button onclick="switchLanguage('ta')" class="text-left text-primary-200 hover:text-surface transition-colors">தமிழ்</button>
+                        <button onclick="switchLanguage('ml')" class="text-left text-primary-200 hover:text-surface transition-colors">മലയാളം</button>
+                        <button onclick="switchLanguage('hi')" class="text-left text-primary-200 hover:text-surface transition-colors">हिंदी</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 Shree Lakshmi Mirror Traders & Furniture. All Rights Reserved. | 80+ Years of Trust & Quality
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Switcher
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show selected language content
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Update current language display
+            const langNames = {
+                'en': 'English',
+                'ta': 'தமிழ்',
+                'ml': 'മലയാളം',
+                'hi': 'हिंदी'
+            };
+            
+            document.getElementById('currentLang').textContent = langNames[lang];
+            currentLanguage = lang;
+            
+            // Hide dropdown
+            document.getElementById('languageDropdown').classList.add('hidden');
+        }
+        
+        // Toggle language dropdown
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            document.getElementById('languageDropdown').classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const toggle = document.getElementById('languageToggle');
+            const dropdown = document.getElementById('languageDropdown');
+            
+            if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-down');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.grid > div, .text-center > h2, .text-center > p').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #8B2635; /* Deep maroon - temple architecture */
+  --color-primary-50: #FDF2F4; /* Very light maroon */
+  --color-primary-100: #FCE7EA; /* Light maroon */
+  --color-primary-200: #F8CDD4; /* Lighter maroon */
+  --color-primary-300: #F2A8B5; /* Medium light maroon */
+  --color-primary-400: #E97A8F; /* Medium maroon */
+  --color-primary-500: #D94C6A; /* Base maroon variant */
+  --color-primary-600: #B83651; /* Darker maroon */
+  --color-primary-700: #8B2635; /* Primary maroon */
+  --color-primary-800: #6B1E2A; /* Very dark maroon */
+  --color-primary-900: #4A151D; /* Darkest maroon */
+
+  /* Secondary Colors */
+  --color-secondary: #D4AF37; /* Rich gold - prosperity */
+  --color-secondary-50: #FEFCF3; /* Very light gold */
+  --color-secondary-100: #FDF8E1; /* Light gold */
+  --color-secondary-200: #FBF0C4; /* Lighter gold */
+  --color-secondary-300: #F7E49C; /* Medium light gold */
+  --color-secondary-400: #F1D464; /* Medium gold */
+  --color-secondary-500: #E8C547; /* Base gold variant */
+  --color-secondary-600: #D4AF37; /* Primary gold */
+  --color-secondary-700: #B8942A; /* Darker gold */
+  --color-secondary-800: #94751F; /* Very dark gold */
+  --color-secondary-900: #6B5416; /* Darkest gold */
+
+  /* Accent Colors */
+  --color-accent: #CD853F; /* Sandalwood brown */
+  --color-accent-50: #FDF9F5; /* Very light brown */
+  --color-accent-100: #FAF1E8; /* Light brown */
+  --color-accent-200: #F4E1CC; /* Lighter brown */
+  --color-accent-300: #EBCAA5; /* Medium light brown */
+  --color-accent-400: #DFB072; /* Medium brown */
+  --color-accent-500: #D19B58; /* Base brown variant */
+  --color-accent-600: #CD853F; /* Primary accent brown */
+  --color-accent-700: #B06F2F; /* Darker brown */
+  --color-accent-800: #8F5A22; /* Very dark brown */
+  --color-accent-900: #654118; /* Darkest brown */
+
+  /* Background Colors */
+  --color-background: #FFF8F0; /* Warm ivory */
+  --color-surface: #FFFFFF; /* Pure white */
+
+  /* Text Colors */
+  --color-text-primary: #2C1810; /* Dark brown */
+  --color-text-secondary: #6B4E3D; /* Medium brown */
+
+  /* Status Colors */
+  --color-success: #228B22; /* Forest green */
+  --color-success-50: #F0FDF0; /* Very light green */
+  --color-success-100: #DCFCE7; /* Light green */
+  --color-success-200: #BBF7D0; /* Lighter green */
+  --color-success-300: #86EFAC; /* Medium light green */
+  --color-success-400: #4ADE80; /* Medium green */
+  --color-success-500: #22C55E; /* Base green variant */
+  --color-success-600: #228B22; /* Primary success green */
+  --color-success-700: #15803D; /* Darker green */
+  --color-success-800: #166534; /* Very dark green */
+  --color-success-900: #14532D; /* Darkest green */
+
+  --color-warning: #FF8C00; /* Warm orange */
+  --color-warning-50: #FFFBEB; /* Very light orange */
+  --color-warning-100: #FEF3C7; /* Light orange */
+  --color-warning-200: #FDE68A; /* Lighter orange */
+  --color-warning-300: #FCD34D; /* Medium light orange */
+  --color-warning-400: #FBBF24; /* Medium orange */
+  --color-warning-500: #F59E0B; /* Base orange variant */
+  --color-warning-600: #FF8C00; /* Primary warning orange */
+  --color-warning-700: #D97706; /* Darker orange */
+  --color-warning-800: #B45309; /* Very dark orange */
+  --color-warning-900: #92400E; /* Darkest orange */
+
+  --color-error: #DC143C; /* Crimson red */
+  --color-error-50: #FEF2F2; /* Very light red */
+  --color-error-100: #FEE2E2; /* Light red */
+  --color-error-200: #FECACA; /* Lighter red */
+  --color-error-300: #FCA5A5; /* Medium light red */
+  --color-error-400: #F87171; /* Medium red */
+  --color-error-500: #EF4444; /* Base red variant */
+  --color-error-600: #DC143C; /* Primary error red */
+  --color-error-700: #B91C1C; /* Darker red */
+  --color-error-800: #991B1B; /* Very dark red */
+  --color-error-900: #7F1D1D; /* Darkest red */
+
+  /* Shadow Colors */
+  --shadow-primary: rgba(139, 38, 53, 0.1); /* Primary shadow with maroon tint */
+  --shadow-secondary: rgba(212, 175, 55, 0.1); /* Secondary shadow with gold tint */
+  --shadow-accent: rgba(205, 133, 63, 0.1); /* Accent shadow with brown tint */
+}
+
+/* Custom animations */
+@keyframes gentle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes lift-hover {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+@keyframes slide-down {
+  0% { 
+    opacity: 0; 
+    transform: translateY(-10px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0px); 
+  }
+}
+
+/* Custom utility classes */
+.animate-gentle-pulse {
+  animation: gentle-pulse 3s ease-in-out infinite;
+}
+
+.animate-lift-hover {
+  animation: lift-hover 200ms cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slide-down 300ms cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom shadow utilities */
+.shadow-warm {
+  box-shadow: 0 4px 12px var(--shadow-primary);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 8px 24px var(--shadow-primary);
+}
+
+.shadow-gold {
+  box-shadow: 0 4px 12px var(--shadow-secondary);
+}
+
+.shadow-brown {
+  box-shadow: 0 4px 12px var(--shadow-accent);
+}
+
+/* Touch-friendly minimum sizes */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Skeleton loading animation */
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #FFF8F0 25%, #F4E1CC 50%, #FFF8F0 75%);
+  background-size: 200px 100%;
+  animation: skeleton-loading 1.5s infinite;
+}

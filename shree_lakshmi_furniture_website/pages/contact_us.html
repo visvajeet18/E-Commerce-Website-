@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Shree Lakshmi Furniture | Get in Touch | Madurai</title>
+    <meta name="description" content="Contact Shree Lakshmi Furniture in Madurai. Call +91 98765 43210 for furniture orders. Visit our showroom or get directions. 80+ years of trusted service." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background font-inter text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-warm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo Section -->
+ <div class="flex items-center space-x-3">
+    <div class="w-12 h-12 rounded-full overflow-hidden">
+        <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+    </div>
+    <div>
+        <h1 class="text-xl font-poppins font-bold text-primary">Shree Lakshmi</h1>
+        <p class="text-sm text-text-secondary">Mirror Traders and Furniture</p>
+    </div>
+</div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Products</a>
+                    <a href="contact_us.html" class="text-primary font-medium border-b-2 border-primary pb-1">Contact</a>
+                </div>
+
+                <!-- Language Switcher & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button id="languageToggle" class="flex items-center space-x-2 bg-primary-50 px-3 py-2 rounded-lg hover:bg-primary-100 transition-colors">
+                            <span class="text-sm font-medium text-primary" id="currentLang">English</span>
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="absolute right-0 mt-2 w-32 bg-surface rounded-lg shadow-warm border hidden">
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-t-lg" onclick="switchLanguage('en')">English</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ta')">தமிழ்</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ml')">മലയാളം</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-b-lg" onclick="switchLanguage('hi')">हिंदी</button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-primary-50">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden mt-4 pb-4 border-t border-primary-100 hidden">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors py-2">Products</a>
+                    <a href="contact_us.html" class="text-primary font-medium py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="absolute inset-0 opacity-10">
+            <div class="w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><g fill=%22%23D4AF37%22><circle cx=%2220%22 cy=%2220%22 r=%222%22/><circle cx=%2210%22 cy=%2210%22 r=%221%22/><circle cx=%2230%22 cy=%2210%22 r=%221%22/><circle cx=%2210%22 cy=%2230%22 r=%221%22/><circle cx=%2230%22 cy=%2230%22 r=%221%22/></g></svg>');"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6">
+                        Get in Touch
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Visit our showroom in Cumbum or call us for personalized furniture solutions. 
+                        We're here to help you find the perfect pieces for your home.
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6">
+                        தொடர்பு கொள்ளுங்கள்
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8">
+                        கம்பத்தில் உள்ள எங்கள் ஷோரூமுக்கு வாருங்கள் அல்லது தனிப்பயனாக்கப்பட்ட ஃபர்னிச்சர் தீர்வுகளுக்காக எங்களை அழைக்கவும்.
+                        உங்கள் வீட்டிற்கு சிறந்த பொருட்களை தேர்வு செய்ய நாங்கள் உதவ தயாராக உள்ளோம்.
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6">
+                        ബന്ധപ്പെടുക
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8">
+                        കംബം ഷോറൂമിൽ സന്ദർശിക്കുക അല്ലെങ്കിൽ വ്യക്തിഗത ഫർണിച്ചർ പരിഹാരങ്ങൾക്ക് ഞങ്ങളെ വിളിക്കുക.
+                        നിങ്ങളുടെ വീട്ടിലേക്ക് അനുയോജ്യമായ ഉത്പന്നങ്ങൾ കണ്ടെത്താൻ ഞങ്ങൾ ഇവിടെ സഹായിക്കാൻ തയ്യാറാണ്.
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6">
+                        संपर्क में रहें
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8">
+                        कंबम में हमारे शोरूम पर आएं या व्यक्तिगत फ़र्नीचर समाधान के लिए हमें कॉल करें।
+                        हम आपके घर के लिए उपयुक्त फ़र्नीचर खोजने में आपकी सहायता करने के लिए यहाँ हैं।
+                    </p>
+                </div>
+
+                <!-- Quick Contact Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+919842982085" class="bg-primary hover:bg-primary-800 text-surface px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-warm-lg flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                        <span class="lang-content lang-en">Call Now</span>
+                        <span class="lang-content lang-ta hidden">இப்போது அழைக்கவும்</span>
+                        <span class="lang-content lang-ml hidden">ഇപ്പോൾ വിളിക്കുക</span>
+                        <span class="lang-content lang-hi hidden">अभी कॉल करें</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div class="space-y-8">
+                    <!-- Section Header -->
+                    <div>
+                        <!-- English Content -->
+                        <div class="lang-content lang-en">
+                            <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+                                Contact Information
+                            </h2>
+                            <p class="text-lg text-text-secondary">
+                                Reach out to us through any of these channels. We're always ready to help you.
+                            </p>
+                        </div>
+
+                        <!-- Tamil Content -->
+                        <div class="lang-content lang-ta hidden">
+                            <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+                                தொடர்பு தகவல்
+                            </h2>
+                            <p class="text-lg text-text-secondary">
+                                இந்த சேனல்களில் ஏதேனும் ஒன்றின் மூலம் எங்களை அணுகவும். உங்களுக்கு உதவ நாங்கள் எப்போதும் தயாராக இருக்கிறோம்.
+                            </p>
+                        </div>
+
+                        <!-- Malayalam Content -->
+                        <div class="lang-content lang-ml hidden">
+                            <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+                                ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ
+                            </h2>
+                            <p class="text-lg text-text-secondary">
+                                ഈ ചാനലുകളിലൊന്നിലൂടെ ഞങ്ങളെ ബന്ധപ്പെടുക. നിങ്ങളെ സഹായിക്കാൻ ഞങ്ങൾ എപ്പോഴും തയ്യാറാണ്.
+                            </p>
+                        </div>
+
+                        <!-- Hindi Content -->
+                        <div class="lang-content lang-hi hidden">
+                            <h2 class="text-3xl font-poppins font-bold text-primary mb-4">
+                                संपर्क जानकारी
+                            </h2>
+                            <p class="text-lg text-text-secondary">
+                                इनमें से किसी भी चैनल के माध्यम से हमसे संपर्क करें। हम आपकी मदद के लिए हमेशा तैयार हैं।
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-6">
+                        <!-- Primary Phone -->
+                        <div class="bg-primary-50 rounded-2xl p-6 hover:shadow-warm transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-poppins font-semibold text-primary mb-2">Primary Contact</h3>
+                                    <p class="text-2xl font-bold text-secondary mb-2">+91 9842982085</p>
+                                    <p class="text-text-secondary text-sm mb-4">Available: 9:00 AM - 10:00 PM</p>
+                                    <a href="tel:+919842982085" class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-surface px-4 py-2 rounded-lg font-medium transition-colors">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                                        </svg>
+                                        <span class="lang-content lang-en">Call Now</span>
+                                        <span class="lang-content lang-ta hidden">அழைக்கவும்</span>
+                                        <span class="lang-content lang-ml hidden">വിളിക്കുക</span>
+                                        <span class="lang-content lang-hi hidden">कॉल करें</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Phone -->
+                        <div class="bg-secondary-50 rounded-2xl p-6 hover:shadow-gold transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary-900" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-poppins font-semibold text-primary mb-2">Secondary Contact</h3>
+                                    <p class="text-2xl font-bold text-secondary mb-2">+91 9092195950</p>
+                                    <p class="text-text-secondary text-sm mb-4">Available: 10:00 AM - 10:00 PM</p>
+                                    <a href="tel:+9092195950" class="inline-flex items-center space-x-2 bg-secondary hover:bg-secondary-700 text-primary-900 px-4 py-2 rounded-lg font-medium transition-colors">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                                        </svg>
+                                        <span class="lang-content lang-en">Call Now</span>
+                                        <span class="lang-content lang-ta hidden">அழைக்கவும்</span>
+                                        <span class="lang-content lang-ml hidden">വിളിക്കുക</span>
+                                        <span class="lang-content lang-hi hidden">कॉल करें</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="bg-accent-50 rounded-2xl p-6 hover:shadow-brown transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-surface" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-poppins font-semibold text-primary mb-2">Email Address</h3>
+                                    <p class="text-lg font-semibold text-accent mb-2">visvajeetraj@gmail.com</p>
+                                    <p class="text-text-secondary text-sm mb-4">We'll respond within 24 hours</p>
+                                    <a href="mailto:visvajeetraj@gmail.com" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-700 text-surface px-4 py-2 rounded-lg font-medium transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                        </svg>
+                                        <span class="lang-content lang-en">Send Email</span>
+                                        <span class="lang-content lang-ta hidden">மின்னஞ்சல் அனுப்பவும்</span>
+                                        <span class="lang-content lang-ml hidden">ഇമെയിൽ അയയ്ക്കുക</span>
+                                        <span class="lang-content lang-hi hidden">ईमेल भेजें</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="bg-success-50 rounded-2xl p-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-surface" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <!-- English Content -->
+                                    <div class="lang-content lang-en">
+                                        <h3 class="font-poppins font-semibold text-primary mb-3">Business Hours</h3>
+                                        <div class="space-y-2 text-text-secondary">
+                                            <div class="flex justify-between">
+                                                <span>Monday - Saturday:</span>
+                                                <span class="font-medium">9:00 AM - 10:00 PM</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Sunday:</span>
+                                                <span class="font-medium">10:00 AM - 9:00 PM</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Lunch Break:</span>
+                                                <span class="font-medium">1:00 PM - 2:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tamil Content -->
+                                    <div class="lang-content lang-ta hidden">
+                                        <h3 class="font-poppins font-semibold text-primary mb-3">வணிக நேரம்</h3>
+                                        <div class="space-y-2 text-text-secondary">
+                                            <div class="flex justify-between">
+                                                <span>திங்கள் - சனி:</span>
+                                                <span class="font-medium">காலை 9:00 - இரவு 10:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>ஞாயிறு:</span>
+                                                <span class="font-medium">காலை 10:00 - மாலை 9:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>மதிய உணவு இடைவேளை:</span>
+                                                <span class="font-medium">மதியம் 1:00 - 2:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Malayalam Content -->
+                                    <div class="lang-content lang-ml hidden">
+                                        <h3 class="font-poppins font-semibold text-primary mb-3">ബിസിനസ് സമയം</h3>
+                                        <div class="space-y-2 text-text-secondary">
+                                            <div class="flex justify-between">
+                                                <span>തിങ്കൾ - ശനി:</span>
+                                                <span class="font-medium">രാവിലെ 9:00 - രാത്രി 10:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>ഞായർ:</span>
+                                                <span class="font-medium">രാവിലെ 10:00 - വൈകുന്നേരം 9:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>ഉച്ചഭക്ഷണ ഇടവേള:</span>
+                                                <span class="font-medium">ഉച്ച 1:00 - 2:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Hindi Content -->
+                                    <div class="lang-content lang-hi hidden">
+                                        <h3 class="font-poppins font-semibold text-primary mb-3">व्यापारिक समय</h3>
+                                        <div class="space-y-2 text-text-secondary">
+                                            <div class="flex justify-between">
+                                                <span>सोमवार - शनिवार:</span>
+                                                <span class="font-medium">सुबह 9:00 - रात 10:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>रविवार:</span>
+                                                <span class="font-medium">सुबह 10:00 - शाम 9:00</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>दोपहर का भोजन:</span>
+                                                <span class="font-medium">दोपहर 1:00 - 2:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop Image -->
+                <div class="space-y-6">
+                    <div class="bg-surface rounded-2xl shadow-warm overflow-hidden">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="shop.jpg" alt="Shree Lakshmi Furniture Shop Exterior" class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <!-- English Content -->
+                            <div class="lang-content lang-en">
+                                <h3 class="font-poppins font-semibold text-primary mb-2">Our Shop</h3>
+                                <p class="text-text-secondary">
+                                    Visit our Shop in Cumbum to see our complete collection of furniture, mirrors and Devotional Photo Frames. 
+                                    Our experienced staff will help you choose the perfect pieces for your home.
+                                </p>
+                            </div>
+
+                            <!-- Tamil Content -->
+                            <div class="lang-content lang-ta hidden">
+                                <h3 class="font-poppins font-semibold text-primary mb-2">எங்கள் ஷோரூம்</h3>
+                                <p class="text-text-secondary">
+                                    எங்கள் கம்பம் ஷோரூமுக்கு வாருங்கள், பாஃபர்னிச்சர், கண்ணாடி, மற்றும் பக்தி படம்  முழுமையான தொகுப்பைப் பார்வையிடுங்கள்.
+உங்கள் வீட்டிற்கு சிறந்த பொருட்களைத் தேர்வு செய்ய எங்கள் அனுபவமிக்க பணியாளர்கள் உங்களுக்கு உதவுவார்கள்.
+                                </p>
+                            </div>
+
+                            <!-- Malayalam Content -->
+                            <div class="lang-content lang-ml hidden">
+                                <h3 class="font-poppins font-semibold text-primary mb-2">ഞങ്ങളുടെ ഷോറൂം</h3>
+                                <p class="text-text-secondary">
+                                    ഫർണിച്ചറുകൾ, കണ്ണാടികൾ, ഭക്തിയുളള ഫോട്ടോ ഫ്രെയിമുകൾ എന്നിവയുടെ സമ്പൂർണ്ണ ശേഖരം കാണാൻ കംബത്തിലെ ഞങ്ങളുടെ വിശാലമായ ഷോറൂം സന്ദർശിക്കുക.
+നിങ്ങളുടെ വീടിന് ഏറ്റവും അനുയോജ്യമായ ഉത്പന്നങ്ങൾ കണ്ടെത്താൻ ഞങ്ങളുടെ പരിചയസമ്പന്നരായ സ്റ്റാഫ് സഹായിക്കും.
+                                </p>
+                            </div>
+
+                            <!-- Hindi Content -->
+                            <div class="lang-content lang-hi hidden">
+                                <h3 class="font-poppins font-semibold text-primary mb-2">हमारा शोरूम</h3>
+                                <p class="text-text-secondary">
+                                    फर्नीचर, शीशे और भक्ति फोटो फ्रेम के हमारे संपूर्ण संग्रह को देखने के लिए कंबम में हमारे विशाल शोरूम में पधारें।
+हमारे अनुभवी कर्मचारी आपके घर के लिए उपयुक्त फर्नीचर चुनने में आपकी सहायता करेंगे।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location Details -->
+                    <div class="bg-primary-50 rounded-2xl p-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-surface" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <!-- English Content -->
+                                <div class="lang-content lang-en">
+                                    <h3 class="font-poppins font-semibold text-primary mb-3">Our Location</h3>
+                                    <div class="space-y-2 text-text-secondary">
+                                        <p class="font-medium">Shree Lakshmi Mirror Traders & Furniture</p>
+                                        <p>115, LF Main Road, Cumbum</p>
+                                        <p>Tamil Nadu - 625516</p>
+                                        <p class="text-sm mt-3">
+                                            <strong>Nearby Landmarks:</strong><br />
+                                            • Near BY Cumbum Signal<br />
+                                            • Near Canara Bank ATM<br />
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Tamil Content -->
+                                <div class="lang-content lang-ta hidden">
+                                    <h3 class="font-poppins font-semibold text-primary mb-3">எங்கள் இடம்</h3>
+                                    <div class="space-y-2 text-text-secondary">
+                                        <p class="font-medium">Shree Lakshmi Mirror Traders & Furniture</p>
+                                        <p>115, LF Main Road, Cumbum</p>
+                                        <p>தமிழ்நாடு - 625516</p>
+                                        <p class="text-sm mt-3">
+                                            <strong>Nearby Landmarks:</strong><br />
+                                            • Near BY Cumbum Signal<br />
+                                            • Near Canara Bank ATM<br />
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Malayalam Content -->
+                                <div class="lang-content lang-ml hidden">
+                                    <h3 class="font-poppins font-semibold text-primary mb-3">ഞങ്ങളുടെ സ്ഥാനം</h3>
+                                    <div class="space-y-2 text-text-secondary">
+                                        <p class="font-medium">Shree Lakshmi Mirror Traders & Furniture</p>
+                                        <p>115, LF Main Road, Cumbum</p>
+                                        <p>தமிழ்நாடு - 625516</p>
+                                        <p class="text-sm mt-3">
+                                            <strong>Nearby Landmarks:</strong><br />
+                                            • Near BY Cumbum Signal<br />
+                                            • Near Canara Bank ATM<br />
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Hindi Content -->
+                                <div class="lang-content lang-hi hidden">
+                                    <h3 class="font-poppins font-semibold text-primary mb-3">हमारा स्थान</h3>
+                                    <div class="space-y-2 text-text-secondary">
+                                        <p class="font-medium">Shree Lakshmi Mirror Traders & Furniture</p>
+                                        <p>115, LF Main Road, Cumbum</p>
+                                        <p>தமிழ்நாடு - 625516</p>
+                                        <p class="text-sm mt-3">
+                                            <strong>Nearby Landmarks:</strong><br />
+                                            • Near BY Cumbum Signal<br />
+                                            • Near Canara Bank ATM<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gudone Image -->
+                <div class="space-y-6">
+                    <div class="bg-surface rounded-2xl shadow-warm overflow-hidden">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="gudone.jpg" alt="Shree Lakshmi Furniture Gudone" class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <div class="p-6">
+                            <div class="lang-content lang-en">
+                                <h3 class="font-poppins font-semibold text-primary mb-2">Our Showroom</h3>
+                                <p class="text-text-secondary">
+                                    Visit our spacious showroom in Cumbum near new bus stand completely dedicated for furniture with complete collection outlet.
+                                </p>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        Find Us on Map
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Located in the heart of Cumbum, easily accessible by all modes of transport
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        வரைபடத்தில் எங்களைக் கண்டறியுங்கள்
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Located in the heart of Cumbum, easily accessible by all modes of transport
+
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        മാപ്പിൽ ഞങ്ങളെ കണ്ടെത്തുക
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Located in the heart of Cumbum, easily accessible by all modes of transport
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        मानचित्र पर हमें खोजें
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Located in the heart of Cumbum, easily accessible by all modes of transport
+                    </p>
+                </div>
+            </div>
+
+            <!-- Map Container -->
+            <div class="bg-surface rounded-2xl shadow-warm overflow-hidden">
+    <div class="aspect-video">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.548404278582!2d77.2823566!3d9.7384453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b070158408c4a81%3A0x2195e487e165191!2sShree%20Lakshmi%20Mirror%20Traders%20%26%20Furniture!5e0!3m2!1sen!2sin!4v1720348800000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="w-full h-full">
+        </iframe>
+    </div>
+    <div class="p-6 bg-primary-50 border-t border-primary-100">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+                <h3 class="font-poppins font-semibold text-primary mb-1">Shree Lakshmi Mirror Traders & Furniture</h3>
+                <p class="text-text-secondary">No. 115, LF Main Road, Kambam, Theni District, Tamil Nadu - 625516</p>
+            </div>
+            <a href="https://www.google.com/maps/dir//Shree+Lakshmi+Mirror+Traders+%26+Furniture+Dindigul+-+Theni+-+Kottarakkara+Hwy+Bharathiyar+Nagar+Cumbum,+Tamil+Nadu+625516/@9.7384453,77.2849317,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3b070158408c4a81:0x2195e487e165191"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-primary hover:bg-primary-800 text-surface px-6 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span class="lang-content lang-en">Get Directions</span>
+                <span class="lang-content lang-ta hidden">திசைகளைப் பெறுங்கள்</span>
+                <span class="lang-content lang-ml hidden">ദിശകൾ നേടുക</span>
+                <span class="lang-content lang-hi hidden">दिशा प्राप्त करें</span>
+            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <!-- Google Maps Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        Find Our Show Room on Map
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Located near Cumbum New Bus Stand
+                    </p>
+                </div>
+                           <!--Gudone Map Container -->
+            <div class="bg-surface rounded-2xl shadow-warm overflow-hidden">
+    <div class="aspect-video">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d808.9948548974661!2d77.28670726950459!3d9.738137999397154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNDQnMTcuMyJOIDc3wrAxNycxNC41IkU!5e1!3m2!1sen!2sin!4v1751984566675!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="w-full h-full">
+        </iframe>
+    </div>
+    <div class="p-6 bg-primary-50 border-t border-primary-100">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+                <h3 class="font-poppins font-semibold text-primary mb-1">Shree Lakshmi Mirror Traders & Furniture Show Room</h3>
+                <p class="text-text-secondary">No. 101, Oodaikaara Street, Kambam, Theni District, Tamil Nadu - 625516</p>
+            </div>
+            <a href="https://www.google.com/maps/dir//9.7381389,77.2873611/@9.7381389,77.2873611,19z"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-primary hover:bg-primary-800 text-surface px-6 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span class="lang-content lang-en">Get Directions</span>
+                <span class="lang-content lang-ta hidden">திசைகளைப் பெறுங்கள்</span>
+                <span class="lang-content lang-ml hidden">ദിശകൾ നേടുക</span>
+                <span class="lang-content lang-hi hidden">दिशा प्राप्त करें</span>
+            </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary text-surface py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <!-- Company Info -->
+<div>
+    <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+        </div>
+        <div>
+                            <h3 class="text-lg font-poppins font-bold">Shree Lakshmi</h3>
+                            <p class="text-sm text-primary-200">Mirror Traders & Furniture</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        80+ years of traditional craftsmanship serving Tamil Nadu families with premium furniture and mirrors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="home_page.html" class="text-primary-200 hover:text-surface transition-colors">Home</a></li>
+                        <li><a href="about_us_page.html" class="text-primary-200 hover:text-surface transition-colors">About Us</a></li>
+                        <li><a href="products_catalog.html" class="text-primary-200 hover:text-surface transition-colors">Products</a></li>
+                        <li><a href="contact_us.html" class="text-primary-200 hover:text-surface transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9842982085</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9092195950</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Cumbum, Theni, Tamil Nadu</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Languages</h4>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <button onclick="switchLanguage('en')" class="text-left text-primary-200 hover:text-surface transition-colors">English</button>
+                        <button onclick="switchLanguage('ta')" class="text-left text-primary-200 hover:text-surface transition-colors">தமிழ்</button>
+                        <button onclick="switchLanguage('ml')" class="text-left text-primary-200 hover:text-surface transition-colors">മലയാളം</button>
+                        <button onclick="switchLanguage('hi')" class="text-left text-primary-200 hover:text-surface transition-colors">हिंदी</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 Shree Lakshmi Mirror Traders & Furniture. All Rights Reserved. | 80+ Years of Trust & Quality
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Switcher
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show selected language content
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Update current language display
+            const langNames = {
+                'en': 'English',
+                'ta': 'தமிழ்',
+                'ml': 'മലയാളം',
+                'hi': 'हिंदी'
+            };
+            
+            document.getElementById('currentLang').textContent = langNames[lang];
+            currentLanguage = lang;
+            
+            // Hide dropdown
+            document.getElementById('languageDropdown').classList.add('hidden');
+        }
+        
+        // Toggle language dropdown
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            document.getElementById('languageDropdown').classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const toggle = document.getElementById('languageToggle');
+            const dropdown = document.getElementById('languageDropdown');
+            
+            if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = this.querySelector('input[type="text"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            
+            // Show success message
+            alert(`Thank you ${name}! We'll contact you soon at ${phone}.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-down');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.bg-primary-50, .bg-secondary-50, .bg-accent-50, .bg-success-50').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

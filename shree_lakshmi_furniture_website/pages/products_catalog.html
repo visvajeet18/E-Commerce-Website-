@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Catalog - Shree Lakshmi Furniture | Traditional & Modern Furniture Collection</title>
+    <meta name="description" content="Browse our complete furniture collection including cots, mirrors, chairs, dining tables, cupboards, and devotional items. 80+ years of quality craftsmanship in Madurai." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background font-inter text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-warm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+              <!-- Logo Section -->
+ <div class="flex items-center space-x-3">
+    <div class="w-12 h-12 rounded-full overflow-hidden">
+        <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+    </div>
+    <div>
+        <h1 class="text-xl font-poppins font-bold text-primary">Shree Lakshmi</h1>
+        <p class="text-sm text-text-secondary">Mirror Traders and Furniture</p>
+    </div>
+</div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="products_catalog.html" class="text-primary font-medium border-b-2 border-primary pb-1">Products</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Language Switcher & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button id="languageToggle" class="flex items-center space-x-2 bg-primary-50 px-3 py-2 rounded-lg hover:bg-primary-100 transition-colors">
+                            <span class="text-sm font-medium text-primary" id="currentLang">English</span>
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="absolute right-0 mt-2 w-32 bg-surface rounded-lg shadow-warm border hidden">
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-t-lg" onclick="switchLanguage('en')">English</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ta')">தமிழ்</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ml')">മലയാളം</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-b-lg" onclick="switchLanguage('hi')">हिंदी</button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-primary-50">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden mt-4 pb-4 border-t border-primary-100 hidden">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">Home</a>
+                    <a href="about_us_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">About</a>
+                    <a href="products_catalog.html" class="text-primary font-medium py-2">Products</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-primary-800 text-surface py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h1 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                        Our Product Collection
+                    </h1>
+                    <p class="text-lg text-primary-100 max-w-2xl mx-auto">
+                        Discover our complete range of traditional and modern furniture crafted with 80+ years of expertise
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h1 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                        எங்கள் தயாரிப்பு சேகரிப்பு
+                    </h1>
+                    <p class="text-lg text-primary-100 max-w-2xl mx-auto">
+                        80+ ஆண்டுகள் நிபுணத்துவத்துடன் வடிவமைக்கப்பட்ட பாரம்பரிய மற்றும் நவீன பர்னிச்சர்களின் முழுமையான வரிசையைக் கண்டறியுங்கள்
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h1 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                        ഞങ്ങളുടെ ഉൽപ്പന്ന ശേഖരം
+                    </h1>
+                    <p class="text-lg text-primary-100 max-w-2xl mx-auto">
+                        80+ വർഷത്തെ വൈദഗ്ധ്യത്തോടെ നിർമ്മിച്ച പരമ്പരാഗതവും ആധുനികവുമായ ഫർണിച്ചറുകളുടെ പൂർണ്ണമായ ശ്രേണി കണ്ടെത്തുക
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h1 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                        हमारा उत्पाद संग्रह
+                    </h1>
+                    <p class="text-lg text-primary-100 max-w-2xl mx-auto">
+                        80+ साल की विशेषज्ञता के साथ तैयार किए गए पारंपरिक और आधुनिक फर्नीचर की हमारी पूरी श्रृंखला की खोज करें
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="bg-surface py-6 border-b border-primary-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-4 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Search products..." class="w-full pl-10 pr-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />
+                </div>
+
+                <!-- Filter Chips -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterProducts('all')" class="filter-chip active px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-primary text-surface">
+                        <span class="lang-content lang-en">All Products</span>
+                        <span class="lang-content lang-ta hidden">அனைத்து தயாரிப்புகள்</span>
+                        <span class="lang-content lang-ml hidden">എല്ലാ ഉൽപ്പന്നങ്ങളും</span>
+                        <span class="lang-content lang-hi hidden">सभी उत्पाद</span>
+                    </button>
+                    <button onclick="filterProducts('furniture')" class="filter-chip px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-primary-50 text-primary hover:bg-primary-100">
+                        <span class="lang-content lang-en">Furniture</span>
+                        <span class="lang-content lang-ta hidden">பர்னிச்சர்</span>
+                        <span class="lang-content lang-ml hidden">ഫർണിച്ചർ</span>
+                        <span class="lang-content lang-hi hidden">फर्नीचर</span>
+                    </button>
+                    <button onclick="filterProducts('mirrors')" class="filter-chip px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-primary-50 text-primary hover:bg-primary-100">
+                        <span class="lang-content lang-en">Mirrors</span>
+                        <span class="lang-content lang-ta hidden">கண்ணாடிகள்</span>
+                        <span class="lang-content lang-ml hidden">കണ്ണാടികൾ</span>
+                        <span class="lang-content lang-hi hidden">दर्पण</span>
+                    </button>
+                    <button onclick="filterProducts('devotional')" class="filter-chip px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-primary-50 text-primary hover:bg-primary-100">
+                        <span class="lang-content lang-en">Devotional</span>
+                        <span class="lang-content lang-ta hidden">பூஜை பொருட்கள்</span>
+                        <span class="lang-content lang-ml hidden">ഭക്തി സാമഗ്രികൾ</span>
+                        <span class="lang-content lang-hi hidden">धार्मिक</span>
+                    </button>
+                </div>
+
+                <!-- Reset Filter Button -->
+                <button onclick="resetFilters()" class="flex items-center space-x-2 px-4 py-2 text-text-secondary hover:text-primary transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <span class="lang-content lang-en">Reset</span>
+                    <span class="lang-content lang-ta hidden">மீட்டமை</span>
+                    <span class="lang-content lang-ml hidden">പുനഃസജ്ജമാക്കുക</span>
+                    <span class="lang-content lang-hi hidden">रीसेट</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Cot Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="cot.jpg" alt="Traditional Wooden Cots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Traditional Cots</span>
+                            <span class="lang-content lang-ta hidden">பாரம்பரிய கட்டில்கள்</span>
+                            <span class="lang-content lang-ml hidden">പരമ്പരാഗത കട്ടിലുകൾ</span>
+                            <span class="lang-content lang-hi hidden">पारंपरिक खाट</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Handcrafted wooden cots with traditional Tamil Nadu designs</span>
+                            <span class="lang-content lang-ta hidden">பாரம்பரிய தமிழ்நாடு வடிவமைப்புகளுடன் கையால் செய்யப்பட்ட மர கட்டில்கள்</span>
+                            <span class="lang-content lang-ml hidden">പരമ്പരാഗത തമിഴ്‌നാട് ഡിസൈനുകളുള്ള കൈകൊണ്ട് നിർമ്മിച്ച മരം കട്ടിലുകൾ</span>
+                            <span class="lang-content lang-hi hidden">पारंपरिक तमिलनाडु डिजाइन के साथ हस्तनिर्मित लकड़ी की खाट</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mirror Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="mirrors">
+                    <div class="aspect-square overflow-hidden">
+<img src="decorativemirrors.jpg" alt="Decorative Mirrors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Decorative Mirrors</span>
+                            <span class="lang-content lang-ta hidden">அலங்கார கண்ணாடிகள்</span>
+                            <span class="lang-content lang-ml hidden">അലങ്കാര കണ്ണാടികൾ</span>
+                            <span class="lang-content lang-hi hidden">सजावटी दर्पण</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Beautiful mirrors with ornate frames for home decoration</span>
+                            <span class="lang-content lang-ta hidden">வீட்டு அலங்காரத்திற்காக அலங்கார சட்டங்களுடன் அழகான கண்ணாடிகள்</span>
+                            <span class="lang-content lang-ml hidden">വീട് അലങ്കാരത്തിനായി അലങ്കാര ഫ്രെയിമുകളുള്ള മനോഹരമായ കണ്ണാടികൾ</span>
+                            <span class="lang-content lang-hi hidden">घर की सजावट के लिए सुंदर फ्रेम वाले खूबसूरत दर्पण</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pillow Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="pillow.jpg" alt="Comfortable Pillows" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Premium Pillows</span>
+                            <span class="lang-content lang-ta hidden">உயர்தர தலையணைகள்</span>
+                            <span class="lang-content lang-ml hidden">പ്രീമിയം തലയിണകൾ</span>
+                            <span class="lang-content lang-hi hidden">प्रीमियम तकिए</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Soft and comfortable pillows for better sleep quality</span>
+                            <span class="lang-content lang-ta hidden">சிறந்த தூக்க தரத்திற்காக மென்மையான மற்றும் வசதியான தலையணைகள்</span>
+                            <span class="lang-content lang-ml hidden">മികച്ച ഉറക്കത്തിനായി മൃദുവും സുഖകരവുമായ തലയിണകൾ</span>
+                            <span class="lang-content lang-hi hidden">बेहतर नींद की गुणवत्ता के लिए नरम और आरामदायक तकिए</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chair Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="chair.jpg" alt="Wooden Chairs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Wooden Chairs</span>
+                            <span class="lang-content lang-ta hidden">மர நாற்காலிகள்</span>
+                            <span class="lang-content lang-ml hidden">മരം കസേരകൾ</span>
+                            <span class="lang-content lang-hi hidden">लकड़ी की कुर्सियां</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Comfortable seating solutions for dining and living areas</span>
+                            <span class="lang-content lang-ta hidden">சாப்பாட்டு மற்றும் வாழ்க்கை பகுதிகளுக்கான வசதியான இருக்கை தீர்வுகள்</span>
+                            <span class="lang-content lang-ml hidden">ഡൈനിംഗ്, ലിവിംഗ് ഏരിയകൾക്കുള്ള സുഖകരമായ ഇരിപ്പിട പരിഹാരങ്ങൾ</span>
+                            <span class="lang-content lang-hi hidden">भोजन और बैठक क्षेत्रों के लिए आरामदायक बैठने के समाधान</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dining Table Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="dining.jpg" alt="Dining Tables" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Dining Tables</span>
+                            <span class="lang-content lang-ta hidden">சாப்பாட்டு மேசைகள்</span>
+                            <span class="lang-content lang-ml hidden">ഡൈനിംഗ് ടേബിളുകൾ</span>
+                            <span class="lang-content lang-hi hidden">भोजन की मेज</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Perfect for family gatherings and daily meals</span>
+                            <span class="lang-content lang-ta hidden">குடும்ப கூட்டங்கள் மற்றும் தினசரி உணவுக்கு ஏற்றது</span>
+                            <span class="lang-content lang-ml hidden">കുടുംബ സമ്മേളനങ്ങൾക്കും ദൈനംദിന ഭക്ഷണത്തിനും അനുയോജ്യം</span>
+                            <span class="lang-content lang-hi hidden">पारिवारिक सभाओं और दैनिक भोजन के लिए आदर्श</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Steel Cot Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="steelcot.jpg" alt="Steel Cots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Steel Cots</span>
+                            <span class="lang-content lang-ta hidden">எஃகு கட்டில்கள்</span>
+                            <span class="lang-content lang-ml hidden">സ്റ്റീൽ കട്ടിലുകൾ</span>
+                            <span class="lang-content lang-hi hidden">स्टील की खाट</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Durable and modern steel bed frames</span>
+                            <span class="lang-content lang-ta hidden">நீடித்த மற்றும் நவீன எஃகு படுக்கை சட்டங்கள்</span>
+                            <span class="lang-content lang-ml hidden">മോടിയുള്ളതും ആധുനികവുമായ സ്റ്റീൽ ബെഡ് ഫ്രെയിമുകൾ</span>
+                            <span class="lang-content lang-hi hidden">टिकाऊ और आधुनिक स्टील बेड फ्रेम</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Steel Bero Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="steelbero.jpg" alt="Steel Bero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Steel Bero</span>
+                            <span class="lang-content lang-ta hidden">எஃகு பீரோ</span>
+                            <span class="lang-content lang-ml hidden">സ്റ്റീൽ ബീറോ</span>
+                            <span class="lang-content lang-hi hidden">स्टील ब्यूरो</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Sturdy steel storage furniture for organizing belongings</span>
+                            <span class="lang-content lang-ta hidden">பொருட்களை ஒழுங்கமைக்க உறுதியான எஃகு சேமிப்பு பர்னிச்சர்</span>
+                            <span class="lang-content lang-ml hidden">സാധനങ്ങൾ ക്രമീകരിക്കാനുള്ള ദൃഢമായ സ്റ്റീൽ സ്റ്റോറേജ് ഫർണിച്ചർ</span>
+                            <span class="lang-content lang-hi hidden">सामान व्यवस्थित करने के लिए मजबूत स्टील भंडारण फर्नीचर</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cupboard Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="cupboard.jpg" alt="Cupboards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Cupboards</span>
+                            <span class="lang-content lang-ta hidden">அலமாரிகள்</span>
+                            <span class="lang-content lang-ml hidden">അലമാരകൾ</span>
+                            <span class="lang-content lang-hi hidden">अलमारी</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Spacious storage solutions for clothes and household items</span>
+                            <span class="lang-content lang-ta hidden">ஆடைகள் மற்றும் வீட்டுப் பொருட்களுக்கான விசாலமான சேமிப்பு தீர்வுகள்</span>
+                            <span class="lang-content lang-ml hidden">വസ്ത്രങ്ങൾക്കും വീട്ടുപകരണങ്ങൾക്കുമുള്ള വിശാലമായ സംഭരണ ​​പരിഹാരങ്ങൾ</span>
+                            <span class="lang-content lang-hi hidden">कपड़े और घरेलू सामान के लिए विशाल भंडारण समाधान</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TV Stand Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="tvstand.jpg" alt="TV Stands" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">TV Stands</span>
+                            <span class="lang-content lang-ta hidden">டிவி ஸ்டாண்டுகள்</span>
+                            <span class="lang-content lang-ml hidden">ടിവി സ്റ്റാൻഡുകൾ</span>
+                            <span class="lang-content lang-hi hidden">टीवी स्टैंड</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Modern entertainment units for your living room</span>
+                            <span class="lang-content lang-ta hidden">உங்கள் வாழ்க்கை அறைக்கான நவீன பொழுதுபோக்கு அலகுகள்</span>
+                            <span class="lang-content lang-ml hidden">നിങ്ങളുടെ സിറ്റിംഗ് റൂമിനുള്ള ആധുനിക വിനോദ യൂണിറ്റുകൾ</span>
+                            <span class="lang-content lang-hi hidden">आपके बैठक कक्ष के लिए आधुनिक मनोरंजन इकाइयां</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fancy Mirror Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="mirrors">
+                    <div class="aspect-square overflow-hidden">
+<img src="fancy.jpg" alt="Fancy Mirrors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Fancy Mirrors</span>
+                            <span class="lang-content lang-ta hidden">ஆடம்பர கண்ணாடிகள்</span>
+                            <span class="lang-content lang-ml hidden">ഫാൻസി കണ്ണാടികൾ</span>
+                            <span class="lang-content lang-hi hidden">फैंसी दर्पण</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Elegant mirrors with intricate designs and premium finishes</span>
+                            <span class="lang-content lang-ta hidden">சிக்கலான வடிவமைப்புகள் மற்றும் பிரீமியம் பூச்சுகளுடன் நேர்த்தியான கண்ணாடிகள்</span>
+                            <span class="lang-content lang-ml hidden">സങ്കീർണ്ണമായ ഡിസൈനുകളും പ്രീമിയം ഫിനിഷുകളുമുള്ള ഗംഭീരമായ കണ്ണാടികൾ</span>
+                            <span class="lang-content lang-hi hidden">जटिल डिजाइन और प्रीमियम फिनिश के साथ सुरुचिपूर्ण दर्पण</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pooja Materials Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="devotional">
+                    <div class="aspect-square overflow-hidden">
+<img src="pooja.jpg" alt="Pooja Materials" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Pooja Materials</span>
+                            <span class="lang-content lang-ta hidden">பூஜை பொருட்கள்</span>
+                            <span class="lang-content lang-ml hidden">പൂജാ സാമഗ്രികൾ</span>
+                            <span class="lang-content lang-hi hidden">पूजा सामग्री</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Traditional devotional items for your prayer room</span>
+                            <span class="lang-content lang-ta hidden">உங்கள் பிரார்த்தனை அறைக்கான பாரம்பரிய பக்தி பொருட்கள்</span>
+                            <span class="lang-content lang-ml hidden">നിങ്ങളുടെ പ്രാർത്ഥനാ മുറിക്കുള്ള പരമ്പരാഗത ഭക്തി വസ്തുക്കൾ</span>
+                            <span class="lang-content lang-hi hidden">आपके प्रार्थना कक्ष के लिए पारंपरिक भक्ति सामग्री</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Beds Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="bed.jpg" alt="Comfortable Beds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Comfortable Beds</span>
+                            <span class="lang-content lang-ta hidden">வசதியான படுக்கைகள்</span>
+                            <span class="lang-content lang-ml hidden">സുഖകരമായ കിടക്കകൾ</span>
+                            <span class="lang-content lang-hi hidden">आरामदायक बिस्तर</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Quality beds designed for restful sleep and comfort</span>
+                            <span class="lang-content lang-ta hidden">அமைதியான தூக்கம் மற்றும் வசதிக்காக வடிவமைக்கப்பட்ட தரமான படுக்கைகள்</span>
+                            <span class="lang-content lang-ml hidden">വിശ്രമവും സുഖവുമായ ഉറക്കത്തിനായി രൂപകൽപ്പന ചെയ്ത ഗുണമേന്മയുള്ള കിടക്കകൾ</span>
+                            <span class="lang-content lang-hi hidden">आरामदायक नींद और सुविधा के लिए डिज़ाइन किए गए गुणवत्तापूर्ण बिस्तर</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+               <!-- Pooja satand -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="poojastand.jpg" alt="Pooja Stand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Pooja Stand</span>
+                            <span class="lang-content lang-ta hidden">பூஜை ஸ்டாண்ட்</span>
+                            <span class="lang-content lang-ml hidden">പൂജാ സ്റ്റാൻഡ്</span>
+                            <span class="lang-content lang-hi hidden">पूजा स्टैंड</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Wood variety storage for pooja purposes</span>
+                            <span class="lang-content lang-ta hidden">பூஜை தேவைகளுக்கான பல்வேறு மர வகைகள் சேமிப்பு</span>
+                            <span class="lang-content lang-ml hidden">പൂജ ആവശ്യങ്ങൾക്ക് വിവിധ തരം മരങ്ങൾ സംഭരിക്കാൻ</span>
+                            <span class="lang-content lang-hi hidden">पूजा कार्यों के लिए लकड़ी की विविध भंडारण</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Wire cot -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="wire.jpg" alt="Wire cot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Wire Cot</span>
+                            <span class="lang-content lang-ta hidden">வயர் கட்டில்</span>
+                            <span class="lang-content lang-ml hidden">വയർ കോട്ടിൽ</span>
+                            <span class="lang-content lang-hi hidden">वायर खाट </span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">A traditional wire-based cot designed for painless, restful sleep.</span>
+                            <span class="lang-content lang-ta hidden">இன்றும் பாரம்பரியமாகப் பயன்படும் வயர் கட்டில், வலி இல்லாத நிம்மதியான தூக்கத்திற்காக வடிவமைக்கப்பட்டுள்ளது.</span>
+                            <span class="lang-content lang-ml hidden">വേദനയില്ലാതെ വിശ്രമപ്രദമായ നിദ്രയ്ക്ക് ഉദ്ദേശിച്ച വയറിൽ നിന്നുള്ള പരമ്പരാഗത കോട്ടിൽ.</span>
+                            <span class="lang-content lang-hi hidden">आरामदायक और बिना पीड़ा के नींद के लिए तैयार की गई पारंपरिक वायर खाट।</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Steel Racks Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="furniture">
+                    <div class="aspect-square overflow-hidden">
+<img src="rack.jpg" alt="Steel Racks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Steel Racks</span>
+                            <span class="lang-content lang-ta hidden">எஃகு அலமாரிகள்</span>
+                            <span class="lang-content lang-ml hidden">സ്റ്റീൽ റാക്കുകൾ</span>
+                            <span class="lang-content lang-hi hidden">स्टील रैक</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Versatile steel storage racks for various purposes</span>
+                            <span class="lang-content lang-ta hidden">பல்வேறு நோக்கங்களுக்காக பல்துறை எஃகு சேமிப்பு அலமாரிகள்</span>
+                            <span class="lang-content lang-ml hidden">വിവിധ ആവശ്യങ്ങൾക്കുള്ള വൈവിധ്യമാർന്ന സ്റ്റീൽ സ്റ്റോറേജ് റാക്കുകൾ</span>
+                            <span class="lang-content lang-hi hidden">विभिन्न उद्देश्यों के लिए बहुमुखी स्टील भंडारण रैक</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Devotional Photos Product Card -->
+                <div class="product-card bg-surface rounded-2xl shadow-warm hover:shadow-warm-lg transition-all duration-300 overflow-hidden group" data-category="devotional">
+                    <div class="aspect-square overflow-hidden">
+<img src="photo.jpg" alt="Devotional Photos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-poppins font-semibold text-primary text-lg mb-2">
+                            <span class="lang-content lang-en">Devotional Photos</span>
+                            <span class="lang-content lang-ta hidden">பக்தி புகைப்படங்கள்</span>
+                            <span class="lang-content lang-ml hidden">ഭക്തി ഫോട്ടോകൾ</span>
+                            <span class="lang-content lang-hi hidden">भक्ति तस्वीरें</span>
+                        </h3>
+                        <p class="text-sm text-text-secondary mb-4">
+                            <span class="lang-content lang-en">Sacred images and frames for spiritual decoration</span>
+                            <span class="lang-content lang-ta hidden">ஆன்மீக அலங்காரத்திற்கான புனித படங்கள் மற்றும் சட்டங்கள்</span>
+                            <span class="lang-content lang-ml hidden">ആത്മീയ അലങ്കാരത്തിനുള്ള പവിത്രമായ ചിത്രങ്ങളും ഫ്രെയിമുകളും</span>
+                            <span class="lang-content lang-hi hidden">आध्यात्मिक सजावट के लिए पवित्र चित्र और फ्रेम</span>
+                        </p>
+                        <a href="tel:+919842982085" class="w-full bg-primary hover:bg-primary-800 text-surface px-4 py-3 rounded-lg font-medium transition-colors text-center block">
+                            <span class="lang-content lang-en">Call to Order</span>
+                            <span class="lang-content lang-ta hidden">ஆர்டர் செய்ய அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഓർഡർ ചെയ്യാൻ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">ऑर्डर के लिए कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="text-center py-12 hidden">
+                <div class="max-w-md mx-auto">
+                    <svg class="w-16 h-16 text-text-secondary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.291-1.007-5.824-2.562M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                    </svg>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-2">
+                        <span class="lang-content lang-en">No Products Found</span>
+                        <span class="lang-content lang-ta hidden">தயாரிப்புகள் எதுவும் கிடைக்கவில்லை</span>
+                        <span class="lang-content lang-ml hidden">ഉൽപ്പന്നങ്ങളൊന്നും കണ്ടെത്തിയില്ല</span>
+                        <span class="lang-content lang-hi hidden">कोई उत्पाद नहीं मिला</span>
+                    </h3>
+                    <p class="text-text-secondary mb-4">
+                        <span class="lang-content lang-en">Try adjusting your search or filter criteria</span>
+                        <span class="lang-content lang-ta hidden">உங்கள் தேடல் அல்லது வடிகட்டி அளவுகோல்களை சரிசெய்ய முயற்சிக்கவும்</span>
+                        <span class="lang-content lang-ml hidden">നിങ്ങളുടെ തിരയൽ അല്ലെങ്കിൽ ഫിൽട്ടർ മാനദണ്ഡങ്ങൾ ക്രമീകരിക്കാൻ ശ്രമിക്കുക</span>
+                        <span class="lang-content lang-hi hidden">अपने खोज या फ़िल्टर मानदंड को समायोजित करने का प्रयास करें</span>
+                    </p>
+                    <button onclick="resetFilters()" class="bg-primary hover:bg-primary-800 text-surface px-6 py-3 rounded-lg font-medium transition-colors">
+                        <span class="lang-content lang-en">Reset Filters</span>
+                        <span class="lang-content lang-ta hidden">வடிகट்டிகளை மீட்டமைக்கவும்</span>
+                        <span class="lang-content lang-ml hidden">ഫിൽട്ടറുകൾ പുനഃസജ്ജമാക്കുക</span>
+                        <span class="lang-content lang-hi hidden">फ़िल्टर रीसेट करें</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-primary-800 text-surface">
+        <div class="container mx-auto px-4 text-center">
+            <!-- English Content -->
+            <div class="lang-content lang-en">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                    Ready to Order?
+                </h2>
+                <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                    Call us now to discuss your furniture needs and get personalized recommendations from our experts
+                </p>
+            </div>
+
+            <!-- Tamil Content -->
+            <div class="lang-content lang-ta hidden">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                    ஆர்டர் செய்ய தயாரா?
+                </h2>
+                <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                    உங்கள் பர்னிச்சர் தேவைகளைப் பற்றி விவாதிக்கவும் எங்கள் நிபுணர்களிடமிருந்து தனிப்பயனாக்கப்பட்ட பரிந்துரைகளைப் பெறவும் இப்போதே எங்களை அழைக்கவும்
+                </p>
+            </div>
+
+            <!-- Malayalam Content -->
+            <div class="lang-content lang-ml hidden">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                    ഓർഡർ ചെയ്യാൻ തയ്യാറാണോ?
+                </h2>
+                <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                    നിങ്ങളുടെ ഫർണിച്ചർ ആവശ്യങ്ങൾ ചർച്ച ചെയ്യാനും ഞങ്ങളുടെ വിദഗ്ധരിൽ നിന്ന് വ്യക്തിഗത ശുപാർശകൾ നേടാനും ഇപ്പോൾ തന്നെ ഞങ്ങളെ വിളിക്കുക
+                </p>
+            </div>
+
+            <!-- Hindi Content -->
+            <div class="lang-content lang-hi hidden">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-4">
+                    ऑर्डर करने के लिए तैयार?
+                </h2>
+                <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                    अपनी फर्नीचर आवश्यकताओं पर चर्चा करने और हमारे विशेषज्ञों से व्यक्तिगत सिफारिशें प्राप्त करने के लिए अभी हमें कॉल करें
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+919842982085" class="bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-gold">
+                    <span class="lang-content lang-en">Call Primary: +91 9842982085</span>
+                    <span class="lang-content lang-ta hidden">முதன்மை அழைப்பு: +91  9842982085</span>
+                    <span class="lang-content lang-ml hidden">പ്രാഥമിക കോൾ: +91 9842982085</span>
+                    <span class="lang-content lang-hi hidden">प्राथमिक कॉल: +91 9842982085</span>
+                </a>
+                <a href="tel:+919092195950" class="bg-transparent border-2 border-surface text-surface hover:bg-surface hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
+                    <span class="lang-content lang-en">Call Secondary: +91 9092195950</span>
+                    <span class="lang-content lang-ta hidden">இரண்டாம் அழைப்பு: +91 9092195950</span>
+                    <span class="lang-content lang-ml hidden">ദ്വിതീയ കോൾ: +91 9092195950</span>
+                    <span class="lang-content lang-hi hidden">द्वितीयक कॉल: +91 9092195950</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="bg-primary text-surface py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Company Info -->
+<div>
+    <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+        </div>
+        <div>
+                            <h3 class="text-lg font-poppins font-bold">Shree Lakshmi</h3>
+                            <p class="text-sm text-primary-200">Mirror Traders & Furniture</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        80+ years of traditional craftsmanship serving Tamil Nadu families with premium furniture and mirrors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="home_page.html" class="text-primary-200 hover:text-surface transition-colors">Home</a></li>
+                        <li><a href="about_us_page.html" class="text-primary-200 hover:text-surface transition-colors">About Us</a></li>
+                        <li><a href="products_catalog.html" class="text-primary-200 hover:text-surface transition-colors">Products</a></li>
+                        <li><a href="contact_us.html" class="text-primary-200 hover:text-surface transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9842982085</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9092195950</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Cumbum, Theni, Tamil Nadu</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Languages</h4>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <button onclick="switchLanguage('en')" class="text-left text-primary-200 hover:text-surface transition-colors">English</button>
+                        <button onclick="switchLanguage('ta')" class="text-left text-primary-200 hover:text-surface transition-colors">தமிழ்</button>
+                        <button onclick="switchLanguage('ml')" class="text-left text-primary-200 hover:text-surface transition-colors">മലയാളം</button>
+                        <button onclick="switchLanguage('hi')" class="text-left text-primary-200 hover:text-surface transition-colors">हिंदी</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 Shree Lakshmi Mirror Traders & Furniture. All Rights Reserved. | 80+ Years of Trust & Quality
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Switcher
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show selected language content
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Update current language display
+            const langNames = {
+                'en': 'English',
+                'ta': 'தமிழ்',
+                'ml': 'മലയാളം',
+                'hi': 'हिंदी'
+            };
+            
+            document.getElementById('currentLang').textContent = langNames[lang];
+            currentLanguage = lang;
+            
+            // Hide dropdown
+            document.getElementById('languageDropdown').classList.add('hidden');
+        }
+        
+        // Toggle language dropdown
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            document.getElementById('languageDropdown').classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const toggle = document.getElementById('languageToggle');
+            const dropdown = document.getElementById('languageDropdown');
+            
+            if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        
+        // Product filtering functionality
+        function filterProducts(category) {
+            const productCards = document.querySelectorAll('.product-card');
+            const filterChips = document.querySelectorAll('.filter-chip');
+            const noResults = document.getElementById('noResults');
+            let visibleCount = 0;
+            
+            // Update filter chip active state
+            filterChips.forEach(chip => {
+                chip.classList.remove('active', 'bg-primary', 'text-surface');
+                chip.classList.add('bg-primary-50', 'text-primary');
+            });
+            
+            event.target.classList.add('active', 'bg-primary', 'text-surface');
+            event.target.classList.remove('bg-primary-50', 'text-primary');
+            
+            // Filter products
+            productCards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+        
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+            const noResults = document.getElementById('noResults');
+            let visibleCount = 0;
+            
+            productCards.forEach(card => {
+                const productName = card.querySelector('h3').textContent.toLowerCase();
+                const productDescription = card.querySelector('p').textContent.toLowerCase();
+                
+                if (productName.includes(searchTerm) || productDescription.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            if (visibleCount === 0 && searchTerm.length > 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        });
+        
+        // Reset filters
+        function resetFilters() {
+            // Clear search input
+            document.getElementById('searchInput').value = '';
+            
+            // Reset filter chips
+            const filterChips = document.querySelectorAll('.filter-chip');
+            filterChips.forEach(chip => {
+                chip.classList.remove('active', 'bg-primary', 'text-surface');
+                chip.classList.add('bg-primary-50', 'text-primary');
+            });
+            
+            // Activate "All Products" chip
+            const allProductsChip = filterChips[0];
+            allProductsChip.classList.add('active', 'bg-primary', 'text-surface');
+            allProductsChip.classList.remove('bg-primary-50', 'text-primary');
+            
+            // Show all products
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            
+            // Hide no results message
+            document.getElementById('noResults').classList.add('hidden');
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-down');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe product cards for animation
+        document.querySelectorAll('.product-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

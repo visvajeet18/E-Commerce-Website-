@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Shree Lakshmi Mirror Traders & Furniture | 80+ Years of Heritage @ Cumbum</title>
+    <meta name="description" content="Discover the 80+ year heritage of Shree Lakshmi Furniture in Cumbum. Learn about our traditional craftsmanship, family values, and commitment to quality furniture and mirrors." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background font-inter text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-warm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+ <!-- Logo Section -->
+<div class="flex items-center space-x-3">
+    <!-- Replacing SVG with Lakshmi Image -->
+    <div class="w-12 h-12 rounded-full overflow-hidden">
+        <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+    </div>
+    <div>
+        <h1 class="text-xl font-poppins font-bold text-primary">Shree Lakshmi</h1>
+        <p class="text-sm text-text-secondary">Mirror Traders & Furniture</p>
+    </div>
+</div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="about_us_page.html" class="text-primary font-medium border-b-2 border-primary pb-1">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Products</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Language Switcher & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button id="languageToggle" class="flex items-center space-x-2 bg-primary-50 px-3 py-2 rounded-lg hover:bg-primary-100 transition-colors">
+                            <span class="text-sm font-medium text-primary" id="currentLang">English</span>
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="languageDropdown" class="absolute right-0 mt-2 w-32 bg-surface rounded-lg shadow-warm border hidden">
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-t-lg" onclick="switchLanguage('en')">English</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ta')">தமிழ்</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50" onclick="switchLanguage('ml')">മലയാളം</button>
+                            <button class="w-full text-left px-4 py-2 hover:bg-primary-50 rounded-b-lg" onclick="switchLanguage('hi')">हिंदी</button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-primary-50">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden mt-4 pb-4 border-t border-primary-100 hidden">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_page.html" class="text-text-secondary hover:text-primary transition-colors py-2">Home</a>
+                    <a href="about_us_page.html" class="text-primary font-medium py-2">About</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-colors py-2">Products</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6 animate-slide-down">
+                        Our Heritage Story
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+                        Discover the 80+ year legacy of Shree Lakshmi Mirror Traders & Furniture, where timeless craftsmanship meets trusted tradition in the heart of Cumbum, Theni District.
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6 animate-slide-down">
+                        எங்கள் பாரம்பரிய கதை
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+                        தேனி மாவட்டம் , பரம்பரியமும் நம்பிக்கையும் ஒன்றிணையும் ஸ்ரீ லக்ஷ்மி கண்ணாடி மற்றும் பர்னிச்சரின் 80+ ஆண்டுகளான பாரம்பரியச் சுவைமிக்க பயணத்தை கண்டறியுங்கள்.
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6 animate-slide-down">
+                        ഞങ്ങളുടെ പൈതൃക കഥ
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+                        തെന്നി ജില്ലയിലെ കുംബത്തിൽ നിലനിൽക്കുന്ന വിശ്വാസവും പാരമ്പര്യവും ഒരുമിക്കുന്ന ശ്രീ ലക്ഷ്മി മിറർ ട്രേഡേഴ്‌സ് & ഫർണിച്ചറിന്റെ 80+ വർഷത്തെ പാരമ്പര്യ യാത്രയെ കണ്ടെത്തൂ.
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h1 class="text-4xl md:text-5xl font-poppins font-bold text-primary mb-6 animate-slide-down">
+                        हमारी विरासत की कहानी
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 animate-slide-down" style="animation-delay: 0.2s;">
+                        थेनी जिले के कुम्बम में स्थित श्री लक्ष्मी मिरर ट्रेडर्स एंड फर्नीचर की 80+ वर्षों की समृद्ध विरासत को जानिए, जहाँ परंपरा और गुणवत्ता का सुंदर संगम होता है।
+                    </p>
+                </div>
+
+                <!-- Decorative Elements -->
+                <div class="flex justify-center space-x-4 animate-slide-down" style="animation-delay: 0.4s;">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                    <div class="w-2 h-2 bg-accent rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Story Image -->
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="aspect-square rounded-2xl overflow-hidden shadow-warm-lg">
+                            <img src="shop.jpg" alt="Shree Lakshmi Furniture Shop" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <!-- Decorative Frame -->
+                        <div class="absolute -top-4 -left-4 w-24 h-24 border-4 border-secondary rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 border-4 border-accent rounded-full opacity-20"></div>
+                    </div>
+                </div>
+
+                <!-- Story Content -->
+                <div class="order-1 lg:order-2">
+                    <!-- English Content -->
+                    <div class="lang-content lang-en">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                            A Legacy Born 
+                        </h2>
+                        <div class="space-y-4 text-lg text-text-secondary">
+                            <p>
+                                In the bustling streets of Theni, where tradition flows like the sacred Vaigai River, 
+                                Shree Lakshmi Furniture began its journey. What started as a small shop 
+                                has grown into a trusted name spanning four generations.
+                            </p>
+                            <p>
+                                Our founder, blessed by Goddess Lakshmi's grace, believed that furniture should not 
+                                just fill homes but create memories. Every piece crafted in our workshop carries 
+                                the warmth of Tamil Nadu's rich cultural heritage.
+                            </p>
+                            <p>
+                                From traditional wooden cots that have witnessed countless family stories to modern 
+                                steel furniture that adapts to contemporary needs, we have evolved while staying 
+                                true to our roots of quality and trust.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tamil Content -->
+                    <div class="lang-content lang-ta hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                            பிறந்த ஒரு பாரம்பரியம்
+                        </h2>
+                        <div class="space-y-4 text-lg text-text-secondary">
+                            <p>
+                                புனித வைகை ஆறுபோல் பாரம்பரியம் ஓடிக்கொண்டிருக்கும் தேனி நகரின் நெரிசலான வீதிகளில்,
+                                ஸ்ரீ லக்ஷ்மி பர்னிச்சர் தனது பயணத்தை தொடங்கியது. சிறிய கடையாகத் தொடங்கிய இந்நிறுவனம்,
+                                இன்று நான்கு தலைமுறைகள் கடந்த நம்பிக்கைக்குரிய பெயராக மாறியுள்ளது.
+                            </p>
+                            <p>
+                                லக்ஷ்மி தேவியின் அருளால் ஆசீர்வதிக்கப்பட்ட எங்கள் நிறுவனர், பர்னிச்சர் வீடுகளை 
+                                நிரப்புவது மட்டுமல்லாமல் நினைவுகளை உருவாக்க வேண்டும் என்று நம்பினார். எங்கள் 
+                                பட்டறையில் உருவாக்கப்படும் ஒவ்வொரு பொருளும் தமிழ்நாட்டின் வளமான கலாச்சார பாரம்பரியத்தின் அரவணைப்பைக் கொண்டுள்ளது.
+                            </p>
+                            <p>
+                                எண்ணற்ற குடும்ப கதைகளைக் கண்ட பாரம்பரிய மர கட்டில்கள் முதல் சமகால தேவைகளுக்கு 
+                                ஏற்ப மாறும் நவீன எஃகு பர்னிச்சர் வரை, தரம் மற்றும் நம்பிக்கையின் எங்கள் வேர்களுக்கு 
+                                உண்மையாக இருந்து கொண்டே நாங்கள் வளர்ந்துள்ளோம்.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Malayalam Content -->
+                    <div class="lang-content lang-ml hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                             ജനിച്ച ഒരു പാരമ്പര്യം
+                        </h2>
+                        <div class="space-y-4 text-lg text-text-secondary">
+                            <p>
+                                തിരക്കുള്ള തെനി നഗരത്തിന്റെ വീഥികളിലൂടെ, പവിത്രമായ വൈഗൈ നദിപോലെ പാരമ്പര്യം ഒഴുകുമ്പോൾ,
+    ശ്രീ ലക്ഷ്മി ഫർണിച്ചറിന്റെ യാത്ര ആരംഭിച്ചു. ഒരു ചെറുകടയായ് തുടങ്ങിയ സംരംഭം,
+    ഇന്ന് നാലു തലമുറകളായി വിശ്വാസം നേടിയ പേരായിരിക്കുന്നു.
+                            </p>
+                            <p>
+                                ലക്ഷ്മി ദേവിയുടെ കൃപയാൽ അനുഗ്രഹിക്കപ്പെട്ട ഞങ്ങളുടെ സ്ഥാപകൻ, ഫർണിച്ചർ വീടുകൾ 
+                                നിറയ്ക്കുക മാത്രമല്ല, ഓർമ്മകൾ സൃഷ്ടിക്കുകയും വേണമെന്ന് വിശ്വസിച്ചു. ഞങ്ങളുടെ 
+                                വർക്ക്‌ഷോപ്പിൽ നിർമ്മിച്ച ഓരോ കഷണവും തമിഴ്‌നാടിന്റെ സമ്പന്നമായ സാംസ്കാരിക പൈതൃകത്തിന്റെ ഊഷ്മളത വഹിക്കുന്നു.
+                            </p>
+                            <p>
+                                എണ്ണമറ്റ കുടുംബകഥകൾക്ക് സാക്ഷ്യം വഹിച്ച പരമ്പരാഗത തടി കട്ടിലുകൾ മുതൽ സമകാലിക 
+                                ആവശ്യങ്ങൾക്ക് അനുയോജ്യമായ ആധുനിക സ്റ്റീൽ ഫർണിച്ചറുകൾ വരെ, ഗുണനിലവാരത്തിന്റെയും 
+                                വിശ്വാസത്തിന്റെയും ഞങ്ങളുടെ വേരുകളോട് വിശ്വസ്തത പുലർത്തിക്കൊണ്ട് ഞങ്ങൾ വികസിച്ചു.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hindi Content -->
+                    <div class="lang-content lang-hi hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-6">
+                            जन्मी एक विरासत
+                        </h2>
+                        <div class="space-y-4 text-lg text-text-secondary">
+                            <p>
+                                थेनि की व्यस्त गलियों में, जहाँ परंपरा पवित्र वैगई नदी की तरह बहती है,
+    वहीं श्री लक्ष्मी फर्नीचर ने अपनी यात्रा शुरू की थी। एक छोटी सी दुकान से शुरू हुआ यह सफर,
+    आज चार पीढ़ियों से विश्वास का प्रतीक बन चुका है।
+                            </p>
+                            <p>
+                                देवी लक्ष्मी की कृपा से धन्य हमारे संस्थापक का मानना था कि फर्नीचर को केवल घरों को 
+                                भरना नहीं चाहिए बल्कि यादें बनानी चाहिए। हमारी कार्यशाला में तैयार किया गया हर टुकड़ा 
+                                तमिलनाडु की समृद्ध सांस्कृतिक विरासत की गर्मजोशी को साथ लेकर चलता है।
+                            </p>
+                            <p>
+                                पारंपरिक लकड़ी के पलंगों से जिन्होंने अनगिनत पारिवारिक कहानियों को देखा है, आधुनिक 
+                                स्टील फर्नीचर तक जो समकालीन जरूरतों के अनुकूल है, हमने गुणवत्ता और विश्वास की 
+                                अपनी जड़ों के प्रति सच्चे रहते हुए विकास किया है।
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="mt-8">
+                        <a href="tel:+919842982085" class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-surface px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-warm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span class="lang-content lang-en">Call Us Today</span>
+                            <span class="lang-content lang-ta hidden">இன்றே எங்களை அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഇന്ന് ഞങ്ങളെ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">आज ही हमें कॉल करें</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Profile Section -->
+    <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-12">
+                    <!-- English Content -->
+                    <div class="lang-content lang-en">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                            Meet Our Owner
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Third generation craftsman carrying forward the family legacy
+                        </p>
+                    </div>
+
+                    <!-- Tamil Content -->
+                    <div class="lang-content lang-ta hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                            எங்கள் உரிமையாளரை சந்திக்கவும்
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            குடும்ப பாரம்பரியத்தை முன்னெடுத்துச் செல்லும் மூன்றாம் தலைமுறை கைவினைஞர்
+                        </p>
+                    </div>
+
+                    <!-- Malayalam Content -->
+                    <div class="lang-content lang-ml hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                            ഞങ്ങളുടെ ഉടമയെ കാണുക
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            കുടുംബ പാരമ്പര്യം മുന്നോട്ട് കൊണ്ടുപോകുന്ന മൂന്നാം തലമുറ കരകൗശലത്തൊഴിലാളി
+                        </p>
+                    </div>
+
+                    <!-- Hindi Content -->
+                    <div class="lang-content lang-hi hidden">
+                        <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                            हमारे मालिक से मिलें
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            पारिवारिक विरासत को आगे बढ़ाने वाले तीसरी पीढ़ी के शिल्पकार
+                        </p>
+                    </div>
+                </div>
+
+ <!-- Owner Profile Card -->
+<div class="bg-surface rounded-3xl shadow-warm-lg overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Owner Image -->
+        <div class="relative">
+            <div class="aspect-square lg:aspect-auto lg:h-full">
+                <img src="owner.jpg" alt="Ramesh Kumar - Owner" class="w-full h-full object-cover"
+                     onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+            </div>
+            <!-- Decorative Overlay -->
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-900/80 to-transparent p-6 lg:hidden">
+                <h3 class="text-2xl font-poppins font-bold text-surface mb-1">Ramesh Kumar</h3>
+                <p class="text-secondary text-lg">Third Generation Owner</p>
+            </div>
+        </div>
+
+
+                        <!-- Owner Details -->
+                        <div class="p-8 lg:p-12">
+                            <div class="hidden lg:block mb-6">
+                                <h3 class="text-3xl font-poppins font-bold text-primary mb-2">Ramesh Kumar</h3>
+                                <p class="text-xl text-secondary font-medium">Third Generation Owner</p>
+                                <p class="text-text-secondary">Shree Lakshmi Mirror Traders and Furniture</p>
+                            </div>
+
+                            <!-- English Content -->
+                            <div class="lang-content lang-en">
+                                <blockquote class="text-lg text-text-secondary mb-6 italic leading-relaxed">
+                                    "Growing up in this shop, I learned that furniture is not just wood and metal - 
+                                    it's about creating spaces where families gather, where children grow, and where 
+                                    memories are made. Every piece we craft carries the blessings of Goddess Lakshmi 
+                                    and the wisdom of three generations."
+                                </blockquote>
+                                
+                                <div class="space-y-4 text-text-secondary">
+                                    <p>
+                                        <strong class="text-primary">Philosophy:</strong> 
+                                        Quality craftsmanship with traditional values and modern functionality.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">Experience:</strong> 
+                                        25+ years in furniture design and customer service.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">Specialization:</strong> 
+                                        Traditional Tamil Nadu furniture and contemporary designs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Tamil Content -->
+                            <div class="lang-content lang-ta hidden">
+                                <blockquote class="text-lg text-text-secondary mb-6 italic leading-relaxed">
+                                    "இந்த பட்டறையில் வளர்ந்து, பர்னிச்சர் என்பது வெறும் மரமும் உலோகமும் அல்ல என்பதை 
+                                    கற்றுக்கொண்டேன் - இது குடும்பங்கள் கூடும், குழந்தைகள் வளரும், நினைவுகள் உருவாகும் 
+                                    இடங்களை உருவாக்குவதாகும். நாங்கள் உருவாக்கும் ஒவ்வொரு பொருளும் லக்ஷ்மி தேவியின் 
+                                    ஆசீர்வாதத்தையும் மூன்று தலைமுறைகளின் ஞானத்தையும் சுமந்து செல்கிறது."
+                                </blockquote>
+                                
+                                <div class="space-y-4 text-text-secondary">
+                                    <p>
+                                        <strong class="text-primary">தத்துவம்:</strong> 
+                                        பாரம்பரிய மதிப்புகள் மற்றும் நவீன செயல்பாட்டுடன் தர கைவினை.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">அனுபவம்:</strong> 
+                                        பர்னிச்சர் வடிவமைப்பு மற்றும் வாடிக்கையாளர் சேவையில் 25+ ஆண்டுகள்.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">நிபுணத்துவம்:</strong> 
+                                        பாரம்பரிய தமிழ்நாடு பர்னிச்சர் மற்றும் சமகால வடிவமைப்புகள்.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Malayalam Content -->
+                            <div class="lang-content lang-ml hidden">
+                                <blockquote class="text-lg text-text-secondary mb-6 italic leading-relaxed">
+                                    "ഈ വർക്ക്‌ഷോപ്പിൽ വളർന്ന്, ഫർണിച്ചർ എന്നത് വെറും മരവും ലോഹവും അല്ലെന്ന് ഞാൻ 
+                                    മനസ്സിലാക്കി - ഇത് കുടുംബങ്ങൾ ഒത്തുകൂടുന്ന, കുട്ടികൾ വളരുന്ന, ഓർമ്മകൾ സൃഷ്ടിക്കപ്പെടുന്ന 
+                                    ഇടങ്ങൾ സൃഷ്ടിക്കുന്നതാണ്. ഞങ്ങൾ നിർമ്മിക്കുന്ന ഓരോ കഷണവും ലക്ഷ്മി ദേവിയുടെ 
+                                    അനുഗ്രഹവും മൂന്ന് തലമുറകളുടെ ജ്ഞാനവും വഹിക്കുന്നു."
+                                </blockquote>
+                                
+                                <div class="space-y-4 text-text-secondary">
+                                    <p>
+                                        <strong class="text-primary">തത്വശാസ്ത്രം:</strong> 
+                                        പരമ്പരാഗത മൂല്യങ്ങളും ആധുനിക പ്രവർത്തനക്ഷമതയുമുള്ള ഗുണമേന്മയുള്ള കരകൗശലം.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">അനുഭവം:</strong> 
+                                        ഫർണിച്ചർ ഡിസൈനിലും ഉപഭോക്തൃ സേവനത്തിലും 25+ വർഷം.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">സ്പെഷ്യലൈസേഷൻ:</strong> 
+                                        പരമ്പരാഗത തമിഴ്‌നാട് ഫർണിച്ചറും സമകാലിക ഡിസൈനുകളും.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Hindi Content -->
+                            <div class="lang-content lang-hi hidden">
+                                <blockquote class="text-lg text-text-secondary mb-6 italic leading-relaxed">
+                                    "इस कार्यशाला में बड़े होकर, मैंने सीखा कि फर्नीचर सिर्फ लकड़ी और धातु नहीं है - 
+                                    यह उन स्थानों को बनाने के बारे में है जहां परिवार इकट्ठे होते हैं, जहां बच्चे बड़े होते हैं, 
+                                    और जहां यादें बनती हैं। हमारे द्वारा तैयार किया गया हर टुकड़ा देवी लक्ष्मी के आशीर्वाद 
+                                    और तीन पीढ़ियों की बुद्धि को साथ लेकर चलता है।"
+                                </blockquote>
+                                
+                                <div class="space-y-4 text-text-secondary">
+                                    <p>
+                                        <strong class="text-primary">दर्शन:</strong> 
+                                        पारंपरिक मूल्यों और आधुनिक कार्यक्षमता के साथ गुणवत्तापूर्ण शिल्पकारी.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">अनुभव:</strong> 
+                                        फर्नीचर डिजाइन और ग्राहक सेवा में 25+ साल.
+                                    </p>
+                                    <p>
+                                        <strong class="text-primary">विशेषज्ञता:</strong> 
+                                        पारंपरिक तमिलनाडु फर्नीचर और समकालीन डिजाइन.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Contact Button -->
+                            <div class="mt-8">
+                                <a href="tel:+919842982085" class="inline-flex items-center space-x-2 bg-secondary hover:bg-secondary-700 text-primary-900 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-gold">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                                    </svg>
+                                    <span class="lang-content lang-en">Speak with Ramesh Kumar</span>
+                                    <span class="lang-content lang-ta hidden">ரமேஷ்குமாரை தொடர்புகொள்ளுங்கள்</span>
+                                    <span class="lang-content lang-ml hidden">രമേഷ് കുമാരുമായി ബന്ധപ്പെടൂ</span>
+                                    <span class="lang-content lang-hi hidden">रमेश कुमार से बात करें</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <!-- English Content -->
+                <div class="lang-content lang-en">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        Our Journey Through Time
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        Key milestones that shaped our legacy
+                    </p>
+                </div>
+
+                <!-- Tamil Content -->
+                <div class="lang-content lang-ta hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        காலத்தின் வழியாக எங்கள் பயணம்
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        எங்கள் பாரம்பரியத்தை வடிவமைத்த முக்கிய மைல்கற்கள்
+                    </p>
+                </div>
+
+                <!-- Malayalam Content -->
+                <div class="lang-content lang-ml hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        കാലത്തിലൂടെയുള്ള ഞങ്ങളുടെ യാത്ര
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        ഞങ്ങളുടെ പാരമ്പര്യം രൂപപ്പെടുത്തിയ പ്രധാന നാഴികക്കല്ലുകൾ
+                    </p>
+                </div>
+
+                <!-- Hindi Content -->
+                <div class="lang-content lang-hi hidden">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                        समय के साथ हमारी यात्रा
+                    </h2>
+                    <p class="text-lg text-text-secondary">
+                        हमारी विरासत को आकार देने वाले मुख्य मील के पत्थर
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-accent"></div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- 1940 - Foundation -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-primary rounded-full border-4 border-surface shadow-warm flex items-center justify-center">
+                                <div class="w-3 h-3 bg-surface rounded-full"></div>
+                            </div>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+                                <div class="bg-primary-50 rounded-2xl p-6 shadow-warm hover:shadow-warm-lg transition-all duration-300">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <span class="text-2xl font-poppins font-bold text-primary">Cumbum</span>
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    </div>
+                                    <!-- English Content -->
+                                    <div class="lang-content lang-en">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">Foundation</h3>
+                                        <p class="text-text-secondary">Started as a small Mirror/Glass workshop in Cumbum with traditional craftsmanship</p>
+                                    </div>
+                                    <!-- Tamil Content -->
+                                    <div class="lang-content lang-ta hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">அடித்தளம்</h3>
+                                        <p class="text-text-secondary">    பாரம்பரிய கைவினையுடன் கூடிய சிறிய கண்ணாடி பணிப்பயிற்சியாக கும்பத்தில் துவங்கப்பட்டது.</p>
+                                    </div>
+                                    <!-- Malayalam Content -->
+                                    <div class="lang-content lang-ml hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">അടിത്തറ</h3>
+                                        <p class="text-text-secondary">    പാരമ്പര്യ കരകൗശലത്തോടെ കുംബത്തിൽ ഒരു ചെറിയ കണ്ണാടി പ്രവർത്തശാലയായി തുടക്കം കുറിച്ചു.</p>
+                                    </div>
+                                    <!-- Hindi Content -->
+                                    <div class="lang-content lang-hi hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">स्थापना</h3>
+                                        <p class="text-text-secondary">    कुम्बम में पारंपरिक शिल्पकला के साथ एक छोटी सी शीशा/कांच कार्यशाला के रूप में शुरू किया गया।</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1965 - Expansion -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-secondary rounded-full border-4 border-surface shadow-gold flex items-center justify-center">
+                                <div class="w-3 h-3 bg-surface rounded-full"></div>
+                            </div>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                                <div class="bg-secondary-50 rounded-2xl p-6 shadow-warm hover:shadow-warm-lg transition-all duration-300">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <span class="text-2xl font-poppins font-bold text-primary">2017</span>
+                                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    </div>
+                                    <!-- English Content -->
+                                    <div class="lang-content lang-en">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">First Expansion</h3>
+                                        <p class="text-text-secondary">Expanded to include Furniture and decorative items, serving the growing Cumbum community</p>
+                                    </div>
+                                    <!-- Tamil Content -->
+                                    <div class="lang-content lang-ta hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">முதல் விரிவாக்கம்</h3>
+                                        <p class="text-text-secondary">    பர்னிச்சர் மற்றும் அலங்கார பொருட்களை உள்ளடக்கிய வகையில் விரிவுபடுத்தப்பட்டது, வளர்ந்து வரும் கும்பம் சமூகத்திற்குச் சேவையாற்றி வருகிறது.</p>
+                                    </div>
+                                    <!-- Malayalam Content -->
+                                    <div class="lang-content lang-ml hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">ആദ്യ വിപുലീകരണം</h3>
+                                        <p class="text-text-secondary">    ഫർണിച്ചറും അലങ്കാര ഉൽപ്പന്നങ്ങളും ഉൾപ്പെടുത്തി വികസിച്ചു, വളരുന്ന കുംബം സമൂഹത്തിന് സേവനമനുഷ്ഠിക്കുന്നു.</p>
+                                    </div>
+                                    <!-- Hindi Content -->
+                                    <div class="lang-content lang-hi hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">पहला विस्तार</h3>
+                                        <p class="text-text-secondary">    फर्नीचर और सजावटी वस्तुओं को शामिल करते हुए विस्तार किया गया, जो बढ़ते हुए कुम्बम समुदाय की सेवा करता है।</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2000 - Modern Era -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-primary rounded-full border-4 border-surface shadow-warm flex items-center justify-center">
+                                <div class="w-3 h-3 bg-surface rounded-full"></div>
+                            </div>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                                <div class="bg-primary-50 rounded-2xl p-6 shadow-warm hover:shadow-warm-lg transition-all duration-300">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <span class="text-2xl font-poppins font-bold text-primary">2017</span>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <!-- English Content -->
+                                    <div class="lang-content lang-en">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">Modern Era</h3>
+                                        <p class="text-text-secondary">Introduced steel furniture and contemporary designs to meet changing customer needs</p>
+                                    </div>
+                                    <!-- Tamil Content -->
+                                    <div class="lang-content lang-ta hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">நவீன யுகம்</h3>
+                                        <p class="text-text-secondary">மாறிவரும் வாடிக்கையாளர் தேவைகளைப் பூர்த்தி செய்ய எஃகு பர்னிச்சர் மற்றும் சமகால வடிவமைப்புகளை அறிமுகப்படுத்தியது</p>
+                                    </div>
+                                    <!-- Malayalam Content -->
+                                    <div class="lang-content lang-ml hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">ആധുനിക കാലഘട്ടം</h3>
+                                        <p class="text-text-secondary">മാറിക്കൊണ്ടിരിക്കുന്ന ഉപഭോക്തൃ ആവശ്യങ്ങൾ നിറവേറ്റുന്നതിനായി സ്റ്റീൽ ഫർണിച്ചറും സമകാലിക ഡിസൈനുകളും അവതരിപ്പിച്ചു</p>
+                                    </div>
+                                    <!-- Hindi Content -->
+                                    <div class="lang-content lang-hi hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">आधुनिक युग</h3>
+                                        <p class="text-text-secondary">बदलती ग्राहक आवश्यकताओं को पूरा करने के लिए स्टील फर्नीचर और समकालीन डिजाइन पेश किए</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2025 - Third Generation -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-secondary rounded-full border-4 border-surface shadow-gold flex items-center justify-center">
+                                <div class="w-3 h-3 bg-surface rounded-full"></div>
+                            </div>
+                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+                                <div class="bg-secondary-50 rounded-2xl p-6 shadow-warm hover:shadow-warm-lg transition-all duration-300">
+                                    <div class="flex items-center space-x-3 mb-3">
+                                        <span class="text-2xl font-poppins font-bold text-primary">2025</span>
+                                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    </div>
+                                    <!-- English Content -->
+                                    <div class="lang-content lang-en">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">Third Generation</h3>
+                                        <p class="text-text-secondary">Ramesh Kumar continues the legacy with digital presence and multilingual customer service</p>
+                                    </div>
+                                    <!-- Tamil Content -->
+                                    <div class="lang-content lang-ta hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">மூன்றாம் தலைமுறை</h3>
+                                        <p class="text-text-secondary">Ramesh Kumar டிஜிட்டல் இருப்பு மற்றும் பன்மொழி வாடிக்கையாளர் சேவையுடன் பாரம்பரியத்தைத் தொடர்கிறார்</p>
+                                    </div>
+                                    <!-- Malayalam Content -->
+                                    <div class="lang-content lang-ml hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">മൂന്നാം തലമുറ</h3>
+                                        <p class="text-text-secondary">Ramesh Kumar ഡിജിറ്റൽ സാന്നിധ്യവും ബഹുഭാഷാ ഉപഭോക്തൃ സേവനവുമായി പാരമ്പര്യം തുടരുന്നു</p>
+                                    </div>
+                                    <!-- Hindi Content -->
+                                    <div class="lang-content lang-hi hidden">
+                                        <h3 class="text-xl font-poppins font-semibold text-primary mb-2">तीसरी पीढ़ी</h3>
+                                        <p class="text-text-secondary">Ramesh Kumar डिजिटल उपस्थिति और बहुभाषी ग्राहक सेवा के साथ विरासत को जारी रखते हैं</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
+                    <!-- English Content -->
+                    <div class="lang-content lang-en">
+                        <h3 class="text-2xl font-poppins font-bold text-primary mb-4">
+                            Join Our Family of Satisfied Customers
+                        </h3>
+                        <p class="text-lg text-text-secondary mb-6">
+                            Experience the quality and service that has made us Cumbum's trusted furniture destination
+                        </p>
+                    </div>
+
+                    <!-- Tamil Content -->
+                    <div class="lang-content lang-ta hidden">
+                        <h3 class="text-2xl font-poppins font-bold text-primary mb-4">
+                            எங்கள் திருப்தியான வாடிக்கையாளர்களின் குடும்பத்தில் சேருங்கள்
+                        </h3>
+                        <p class="text-lg text-text-secondary mb-6">
+                            எங்களை கம்பம் நகரின் நம்பிக்கைக்குரிய பர்னிச்சர் அடையாலமாக மாற்றிய தரம்.
+                        </p>
+                    </div>
+
+                    <!-- Malayalam Content -->
+                    <div class="lang-content lang-ml hidden">
+                        <h3 class="text-2xl font-poppins font-bold text-primary mb-4">
+                            ഞങ്ങളുടെ സംതൃപ്ത ഉപഭോക്താക്കളുടെ കുടുംബത്തിൽ ചേരുക
+                        </h3>
+                        <p class="text-lg text-text-secondary mb-6">
+                            കമ്പം നഗരത്തിൽ ഏറ്റവും വിശ്വസനീയമായ ഫർണിച്ചർ ലക്ഷ്യസ്ഥാനമാക്കിയ ഗുണനിലവാരവും സേവനവും അനുഭവിക്കൂ.
+                        </p>
+                    </div>
+
+                    <!-- Hindi Content -->
+                    <div class="lang-content lang-hi hidden">
+                        <h3 class="text-2xl font-poppins font-bold text-primary mb-4">
+                            हमारे संतुष्ट ग्राहकों के परिवार में शामिल हों
+                        </h3>
+                        <p class="text-lg text-text-secondary mb-6">
+                            कंबम का सबसे विश्वसनीय फर्नीचर गंतव्य बनाने वाली हमारी गुणवत्ता और सेवा का अनुभव कीजिए।
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="tel:+919842982085" class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-surface px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-warm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span class="lang-content lang-en">Call Us Now</span>
+                            <span class="lang-content lang-ta hidden">இப்போது எங்களை அழைக்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഇപ്പോൾ ഞങ്ങളെ വിളിക്കുക</span>
+                            <span class="lang-content lang-hi hidden">अभी हमें कॉल करें</span>
+                        </a>
+                        <a href="products_catalog.html" class="inline-flex items-center space-x-2 bg-secondary hover:bg-secondary-700 text-primary-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-gold">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            <span class="lang-content lang-en">View Products</span>
+                            <span class="lang-content lang-ta hidden">தயாரிப்புகளைப் பார்க்கவும்</span>
+                            <span class="lang-content lang-ml hidden">ഉൽപ്പന്നങ്ങൾ കാണുക</span>
+                            <span class="lang-content lang-hi hidden">उत्पाद देखें</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-surface py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Company Info -->
+<div>
+    <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-full overflow-hidden">
+            <img src="lakshmi-logo.jpg" alt="Lakshmi Logo" class="w-full h-full object-cover" />
+        </div>
+        <div>
+                            <h3 class="text-lg font-poppins font-bold">Shree Lakshmi</h3>
+                            <p class="text-sm text-primary-200">Mirror Traders & Furniture</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        80+ years of traditional craftsmanship serving Tamil Nadu families with premium furniture and mirrors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="home_page.html" class="text-primary-200 hover:text-surface transition-colors">Home</a></li>
+                        <li><a href="about_us_page.html" class="text-primary-200 hover:text-surface transition-colors">About Us</a></li>
+                        <li><a href="products_catalog.html" class="text-primary-200 hover:text-surface transition-colors">Products</a></li>
+                        <li><a href="contact_us.html" class="text-primary-200 hover:text-surface transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9842982085</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>+91 9092195950</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Cumbum, Theni, Tamil Nadu</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Languages</h4>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <button onclick="switchLanguage('en')" class="text-left text-primary-200 hover:text-surface transition-colors">English</button>
+                        <button onclick="switchLanguage('ta')" class="text-left text-primary-200 hover:text-surface transition-colors">தமிழ்</button>
+                        <button onclick="switchLanguage('ml')" class="text-left text-primary-200 hover:text-surface transition-colors">മലയാളം</button>
+                        <button onclick="switchLanguage('hi')" class="text-left text-primary-200 hover:text-surface transition-colors">हिंदी</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 Shree Lakshmi Mirror Traders & Furniture. All Rights Reserved. | 80+ Years of Trust & Quality
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Switcher
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show selected language content
+            document.querySelectorAll(`.lang-${lang}`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Update current language display
+            const langNames = {
+                'en': 'English',
+                'ta': 'தமிழ்',
+                'ml': 'മലയാളം',
+                'hi': 'हिंदी'
+            };
+            
+            document.getElementById('currentLang').textContent = langNames[lang];
+            currentLanguage = lang;
+            
+            // Hide dropdown
+            document.getElementById('languageDropdown').classList.add('hidden');
+        }
+        
+        // Toggle language dropdown
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            document.getElementById('languageDropdown').classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const toggle = document.getElementById('languageToggle');
+            const dropdown = document.getElementById('languageDropdown');
+            
+            if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-down');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.grid > div, .text-center > h2, .text-center > p, .timeline-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Timeline hover effects
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.classList.add('animate-lift-hover');
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.classList.remove('animate-lift-hover');
+            });
+        });
+    </script>
+</body>
+</html>
